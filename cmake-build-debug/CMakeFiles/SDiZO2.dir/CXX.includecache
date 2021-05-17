@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/bulio/CLionProjects/SDiZO2/main.cpp
+iostream
+-
+src/GraphStructures/util/AdjList.h
+C:/Users/bulio/CLionProjects/SDiZO2/src/GraphStructures/util/AdjList.h
+
+C:/Users/bulio/CLionProjects/SDiZO2/src/GraphStructures/util/AdjList.h
+
