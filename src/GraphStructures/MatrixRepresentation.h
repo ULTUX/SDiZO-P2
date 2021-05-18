@@ -7,7 +7,7 @@
 
 
 class MatrixRepresentation {
-private:
+protected:
     /**
      * Adjacency matrix.
      */
