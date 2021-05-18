@@ -103,12 +103,14 @@ Diagram dziedziczenia dla MatrixRepresentation</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a055097b744337f3551cd3df8c08b32e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a055097b744337f3551cd3df8c08b32e4">MatrixRepresentation</a> (int <a class="el" href="class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c">vertSize</a>, int <a class="el" href="class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b">edgeSize</a>, int <a class="el" href="class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945">startVert</a>, int <a class="el" href="class_matrix_representation.html#a2f3deeccafb365154a5b2b678d245590">endVert</a>)</td></tr>
-<tr class="separator:a055097b744337f3551cd3df8c08b32e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8428eed429dadb1d004e9f5280a63f7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a8428eed429dadb1d004e9f5280a63f7b">addConnection</a> (int begin, int end, int weight)</td></tr>
+<tr class="memitem:a3f3b825488c458215cd6a74c4d857a24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a3f3b825488c458215cd6a74c4d857a24">MatrixRepresentation</a> (int <a class="el" href="class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c">vertSize</a>, int <a class="el" href="class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b">edgeSize</a>, int <a class="el" href="class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945">startVert</a>, int <a class="el" href="class_matrix_representation.html#a2f3deeccafb365154a5b2b678d245590">endVert</a>, bool isDirected)</td></tr>
+<tr class="separator:a3f3b825488c458215cd6a74c4d857a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8428eed429dadb1d004e9f5280a63f7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a8428eed429dadb1d004e9f5280a63f7b">addConnection</a> (int begin, int end, int weight)</td></tr>
 <tr class="separator:a8428eed429dadb1d004e9f5280a63f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0129733efd906e0b43d354bf05ce7930"><td class="memItemLeft" align="right" valign="top">int **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a0129733efd906e0b43d354bf05ce7930">getAdjMatrix</a> ()</td></tr>
 <tr class="separator:a0129733efd906e0b43d354bf05ce7930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07783dfaa508ca1e53f658b46144cbca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a07783dfaa508ca1e53f658b46144cbca">print</a> ()</td></tr>
+<tr class="separator:a07783dfaa508ca1e53f658b46144cbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atrybuty chronione</h2></td></tr>
@@ -124,10 +126,13 @@ Atrybuty chronione</h2></td></tr>
 <tr class="separator:a2f3deeccafb365154a5b2b678d245590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa375b368d7803f01b1f5968e0b1f0c13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#aa375b368d7803f01b1f5968e0b1f0c13">currEdgeSize</a> = 0</td></tr>
 <tr class="separator:aa375b368d7803f01b1f5968e0b1f0c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac80fa6f503b4088d4c64f3d49d55783"><td class="memItemLeft" align="right" valign="top"><a id="aac80fa6f503b4088d4c64f3d49d55783"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></tr>
+<tr class="separator:aac80fa6f503b4088d4c64f3d49d55783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
-<a id="a055097b744337f3551cd3df8c08b32e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a055097b744337f3551cd3df8c08b32e4">&#9670;&nbsp;</a></span>MatrixRepresentation()</h2>
+<a id="a3f3b825488c458215cd6a74c4d857a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f3b825488c458215cd6a74c4d857a24">&#9670;&nbsp;</a></span>MatrixRepresentation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -154,7 +159,13 @@ Atrybuty chronione</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>endVert</em>&#160;</td>
+          <td class="paramname"><em>endVert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isDirected</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -181,6 +192,9 @@ Atrybuty chronione</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void MatrixRepresentation::addConnection </td>
@@ -206,6 +220,11 @@ Atrybuty chronione</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Add new connection to this graph (new edge). </p><dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
@@ -246,6 +265,24 @@ Atrybuty chronione</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a07783dfaa508ca1e53f658b46144cbca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07783dfaa508ca1e53f658b46144cbca">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MatrixRepresentation::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Display whole matrix representation of this graph. </p>
 
 </div>
 </div>

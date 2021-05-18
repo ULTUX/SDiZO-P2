@@ -85,25 +85,34 @@ $(document).ready(function(){initNavTree('class_list_representation.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
-<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="#pro-attribs">Atrybuty chronione</a> &#124;
 <a href="class_list_representation-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy ListRepresentation</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Diagram dziedziczenia dla ListRepresentation</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_list_representation.png" usemap="#ListRepresentation_map" alt=""/>
+  <map id="ListRepresentation_map" name="ListRepresentation_map">
+<area href="class_kruskal_list.html" alt="KruskalList" shape="rect" coords="0,56,115,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
-<tr class="memitem:a8b886a69d89c667d2091ac8a1d4453f9"><td class="memItemLeft" align="right" valign="top"><a id="a8b886a69d89c667d2091ac8a1d4453f9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ListRepresentation</b> (int <a class="el" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a>, int <a class="el" href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">edgeSize</a>, int <a class="el" href="class_list_representation.html#a7c0c2f6421c9ed443d5de64776afad38">startVert</a>, int <a class="el" href="class_list_representation.html#a3ed170b5fbbeb9cc9c7a82679014eb35">endVert</a>)</td></tr>
-<tr class="separator:a8b886a69d89c667d2091ac8a1d4453f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd6591ecf620095c1bc22789cb90472"><td class="memItemLeft" align="right" valign="top"><a id="a5dd6591ecf620095c1bc22789cb90472"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ListRepresentation</b> (int <a class="el" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a>, int <a class="el" href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">edgeSize</a>, int <a class="el" href="class_list_representation.html#a7c0c2f6421c9ed443d5de64776afad38">startVert</a>, int <a class="el" href="class_list_representation.html#a3ed170b5fbbeb9cc9c7a82679014eb35">endVert</a>, bool isDirected)</td></tr>
+<tr class="separator:a5dd6591ecf620095c1bc22789cb90472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b913555ee93b55b7c02df0c60551d9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a6b913555ee93b55b7c02df0c60551d9d">addConnection</a> (int begin, int end, int weight)</td></tr>
 <tr class="separator:a6b913555ee93b55b7c02df0c60551d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3300ebd363981da82cd13c9371c3c41e"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a3300ebd363981da82cd13c9371c3c41e">getAdjLists</a> ()</td></tr>
 <tr class="separator:a3300ebd363981da82cd13c9371c3c41e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Atrybuty prywatne</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atrybuty chronione</h2></td></tr>
 <tr class="memitem:a6cf80ef53c15d82145338602f80f0393"><td class="memItemLeft" align="right" valign="top"><a id="a6cf80ef53c15d82145338602f80f0393"></a>
 <a class="el" href="class_adj_list.html">AdjList</a> **&#160;</td><td class="memItemRight" valign="bottom"><b>adjLists</b></td></tr>
 <tr class="separator:a6cf80ef53c15d82145338602f80f0393"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,6 +126,9 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="separator:a3ed170b5fbbeb9cc9c7a82679014eb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04c828132a76ec58e8fb4dd68329b1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#ae04c828132a76ec58e8fb4dd68329b1e">currEdgeSize</a> = 0</td></tr>
 <tr class="separator:ae04c828132a76ec58e8fb4dd68329b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa069cb1b27930be93a5b83749a1428e9"><td class="memItemLeft" align="right" valign="top"><a id="aa069cb1b27930be93a5b83749a1428e9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></tr>
+<tr class="separator:aa069cb1b27930be93a5b83749a1428e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
 <a id="a6b913555ee93b55b7c02df0c60551d9d"></a>
@@ -208,7 +220,7 @@ Atrybuty prywatne</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -231,7 +243,7 @@ Atrybuty prywatne</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -254,7 +266,7 @@ Atrybuty prywatne</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -277,7 +289,7 @@ Atrybuty prywatne</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -300,7 +312,7 @@ Atrybuty prywatne</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

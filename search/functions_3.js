@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['get_38',['get',['../class_adj_list.html#a464141461a6adce64e3170156a0f4282',1,'AdjList']]],
-  ['getadjlists_39',['getAdjLists',['../class_list_representation.html#a3300ebd363981da82cd13c9371c3c41e',1,'ListRepresentation']]],
-  ['getadjmatrix_40',['getAdjMatrix',['../class_matrix_representation.html#a0129733efd906e0b43d354bf05ce7930',1,'MatrixRepresentation']]],
-  ['getatindex_41',['getAtIndex',['../class_adj_list.html#a5546cd7e9019e2fd29b2121ac68c18dd',1,'AdjList']]],
-  ['getlastelement_42',['getLastElement',['../class_adj_list.html#a2c7ef78937f55bdc4320aaf971ad2e27',1,'AdjList']]]
+  ['get_49',['get',['../class_adj_list.html#a464141461a6adce64e3170156a0f4282',1,'AdjList']]],
+  ['getadjlists_50',['getAdjLists',['../class_list_representation.html#a3300ebd363981da82cd13c9371c3c41e',1,'ListRepresentation']]],
+  ['getadjmatrix_51',['getAdjMatrix',['../class_matrix_representation.html#a0129733efd906e0b43d354bf05ce7930',1,'MatrixRepresentation']]],
+  ['getatindex_52',['getAtIndex',['../class_adj_list.html#a5546cd7e9019e2fd29b2121ac68c18dd',1,'AdjList']]],
+  ['getlastelement_53',['getLastElement',['../class_adj_list.html#a2c7ef78937f55bdc4320aaf971ad2e27',1,'AdjList']]],
+  ['getsize_54',['getSize',['../class_adj_list.html#a438146b413c281d321a09e5c3f8c3314',1,'AdjList']]]
 ];

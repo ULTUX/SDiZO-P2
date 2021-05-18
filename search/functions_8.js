@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shift_48',['shift',['../class_adj_list.html#ab6c156c384601104b0314d5f9b2f82ad',1,'AdjList']]]
+  ['remove_61',['remove',['../class_adj_list.html#a90cbed1b6e2755f9e46ba0210f155b9d',1,'AdjList']]]
 ];

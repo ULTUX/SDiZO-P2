@@ -1,8 +1,10 @@
 var class_kruskal_matrix =
 [
-    [ "KruskalMatrix", "class_kruskal_matrix.html#a0068450433e2d4d95af6ddf94b7629e3", null ],
-    [ "findMST", "class_kruskal_matrix.html#a69b49f0ce3536003f54d905ccfadbdaa", null ],
-    [ "sort", "class_kruskal_matrix.html#aa0db5d2ecb61ac43ef2f7947879981db", null ],
-    [ "minConnections", "class_kruskal_matrix.html#a64d814ae944c4ec0837fb6f0ba742b09", null ],
-    [ "mst", "class_kruskal_matrix.html#ac57ef54a8b454bad8e3a81b668ef796d", null ]
+    [ "KruskalMatrix", "class_kruskal_matrix.html#a065d761b725591ba6d392a7e188b8f6a", null ],
+    [ "find", "class_kruskal_matrix.html#a04e23ca428ad3f20c23397e9a596cd1d", null ],
+    [ "findMST", "class_kruskal_matrix.html#a0489c9bcffa9a5dc957cbf5616d1b08a", null ],
+    [ "init", "class_kruskal_matrix.html#a4bf36ff3c0264d3c8ebfe40480edc42e", null ],
+    [ "unionVert", "class_kruskal_matrix.html#ac67a4d63b3906ed89846dcd8199ff633", null ],
+    [ "minCost", "class_kruskal_matrix.html#aa79522475cb9812429212b66c82d0123", null ],
+    [ "parent", "class_kruskal_matrix.html#af3de3ac8b39aa30097ae88152a797b85", null ]
 ];

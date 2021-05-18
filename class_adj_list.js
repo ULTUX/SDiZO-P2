@@ -11,6 +11,7 @@ var class_adj_list =
     [ "getAtIndex", "class_adj_list.html#a5546cd7e9019e2fd29b2121ac68c18dd", null ],
     [ "getByVert", "class_adj_list.html#a627ab7e41f9156ed13e6bb285551deea", null ],
     [ "getLastElement", "class_adj_list.html#a2c7ef78937f55bdc4320aaf971ad2e27", null ],
+    [ "getSize", "class_adj_list.html#a438146b413c281d321a09e5c3f8c3314", null ],
     [ "indexOf", "class_adj_list.html#a4a4fa676e6eeff8a3e1e68cf5a92033f", null ],
     [ "pop", "class_adj_list.html#a57fb1780a52ef0293b2952963a1a49c4", null ],
     [ "print", "class_adj_list.html#a690a14d466d18efa76a17eda9a465705", null ],

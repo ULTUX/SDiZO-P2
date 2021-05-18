@@ -29,7 +29,20 @@ var menudata={children:[
 {text:"Indeks klas",url:"classes.html"},
 {text:"Hierarchia klas",url:"hierarchy.html"},
 {text:"Składowe klas",url:"functions.html",children:[
-{text:"Wszystko",url:"functions.html"},
+{text:"Wszystko",url:"functions.html",children:[
+{text:"a",url:"functions.html#index_a"},
+{text:"c",url:"functions.html#index_c"},
+{text:"e",url:"functions.html#index_e"},
+{text:"f",url:"functions.html#index_f"},
+{text:"g",url:"functions.html#index_g"},
+{text:"i",url:"functions.html#index_i"},
+{text:"k",url:"functions.html#index_k"},
+{text:"m",url:"functions.html#index_m"},
+{text:"p",url:"functions.html#index_p"},
+{text:"r",url:"functions.html#index_r"},
+{text:"s",url:"functions.html#index_s"},
+{text:"u",url:"functions.html#index_u"},
+{text:"v",url:"functions.html#index_v"}]},
 {text:"Funkcje",url:"functions_func.html"},
 {text:"Zmienne",url:"functions_vars.html"}]}]},
 {text:"Pliki",url:"files.html",children:[
