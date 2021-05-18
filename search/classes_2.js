@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['listnode_28',['ListNode',['../class_list_node.html',1,'']]],
-  ['listrepresentation_29',['ListRepresentation',['../class_list_representation.html',1,'']]]
+  ['kruskalmatrix_29',['KruskalMatrix',['../class_kruskal_matrix.html',1,'']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['matrixrepresentation_18',['MatrixRepresentation',['../class_matrix_representation.html',1,'MatrixRepresentation'],['../class_matrix_representation.html#a055097b744337f3551cd3df8c08b32e4',1,'MatrixRepresentation::MatrixRepresentation()']]]
+  ['listnode_17',['ListNode',['../class_list_node.html',1,'']]],
+  ['listrepresentation_18',['ListRepresentation',['../class_list_representation.html',1,'']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['pop_19',['pop',['../class_adj_list.html#a57fb1780a52ef0293b2952963a1a49c4',1,'AdjList']]],
-  ['print_20',['print',['../class_adj_list.html#a690a14d466d18efa76a17eda9a465705',1,'AdjList']]]
+  ['matrixrepresentation_19',['MatrixRepresentation',['../class_matrix_representation.html',1,'MatrixRepresentation'],['../class_matrix_representation.html#a055097b744337f3551cd3df8c08b32e4',1,'MatrixRepresentation::MatrixRepresentation()']]]
 ];

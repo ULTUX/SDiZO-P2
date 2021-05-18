@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['matrixrepresentation_30',['MatrixRepresentation',['../class_matrix_representation.html',1,'']]]
+  ['listnode_30',['ListNode',['../class_list_node.html',1,'']]],
+  ['listrepresentation_31',['ListRepresentation',['../class_list_representation.html',1,'']]]
 ];
