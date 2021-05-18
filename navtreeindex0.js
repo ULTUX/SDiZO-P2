@@ -1,6 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "_adj_list_8h_source.html":[1,0,0,0,0,0],
+"_connection_8h_source.html":[1,0,0,0,0,1],
 "_list_representation_8h_source.html":[1,0,0,0,1],
 "_matrix_representation_8h_source.html":[1,0,0,0,2],
 "annotated.html":[0,0],
