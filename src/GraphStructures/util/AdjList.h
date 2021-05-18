@@ -5,13 +5,7 @@
 #ifndef SDIZO2_ADJLIST_H
 #define SDIZO2_ADJLIST_H
 
-class Connection {
-public:
-    Connection(int vertex, int edge): edge(edge), vertex(vertex){};
-    Connection(){};
-    int edge;
-    int vertex;
-};
+#include "Connection.h"
 
 class ListNode {
 public:
