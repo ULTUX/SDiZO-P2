@@ -114,6 +114,12 @@ public:
 
     void deleteVert(int v);
 
+    /**
+     * Get size of this list.
+     * @return Size
+     */
+    int getSize();
+
 };
 
 

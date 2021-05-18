@@ -10,7 +10,7 @@
 
 class ListRepresentation {
 
-private:
+protected:
 
     AdjList** adjLists;
 
@@ -39,8 +39,9 @@ private:
      */
     int currEdgeSize = 0;
 
+    bool isDirected;
 public:
-    ListRepresentation(int vertSize, int edgeSize, int startVert, int endVert);
+    ListRepresentation(int vertSize, int edgeSize, int startVert, int endVert, bool isDirected);
 
     /**
      * Add new connection to this graph (new edge).

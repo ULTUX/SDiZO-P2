@@ -71,6 +71,8 @@ ListNode *AdjList::getAtIndex(int i) {
     return curr;
 }
 
+
+
 Connection AdjList::pop() {
     ListNode *curr = head;
     ListNode *lastElement = getLastElement();
@@ -176,4 +178,15 @@ void AdjList::deleteVert(int v) {
     ListNode* toDel = curr->next;
     curr->next=toDel->next;
     delete toDel;
+}
+
+int AdjList::getSize() {
+    int i = 0;
+    ListNode* curr = head;
+    if (head == nullptr) return 0;
+    while (curr->next != nullptr) {
+        curr = curr->next;
+        i++;
+    }
+    return i+1;
 }

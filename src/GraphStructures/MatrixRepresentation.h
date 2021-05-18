@@ -38,6 +38,8 @@ protected:
      */
     int currEdgeSize = 0;
 
+    bool isDirected;
+
 public:
     /**
      * Create new matrix representation, set all graph parameters and allocate new adjacency matrix.
@@ -46,9 +48,9 @@ public:
      * @param startVert Starting vertex.
      * @param endVert Ending vertex.
      */
-    MatrixRepresentation(int vertSize, int edgeSize, int startVert, int endVert);
+    MatrixRepresentation(int vertSize, int edgeSize, int startVert, int endVert, bool isDirected);
 
-    /**
+    virtual /**
      * Add new connection to this graph (new edge).
      * @param begin Edges starting vertex.
      * @param end Edges ending vertex.
@@ -64,6 +66,11 @@ public:
      * @throws logic_error If graph was not fully created.
      */
     int **getAdjMatrix();
+
+    /**
+     * Display whole matrix representation of this graph.
+     */
+    void print();
 
 };
 
