@@ -57,3 +57,7 @@ void ListRepresentation::addConnection(int begin, int end, int weight) {
         }
     }
 }
+
+AdjList **ListRepresentation::getAdjLists() {
+    return this->adjLists;
+}

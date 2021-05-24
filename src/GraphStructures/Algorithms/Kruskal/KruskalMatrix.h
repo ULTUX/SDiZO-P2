@@ -6,8 +6,8 @@
 #define SDIZO2_KRUSKALMATRIX_H
 
 
-#include "../MatrixRepresentation.h"
-#include "../util/AdjList.h"
+#include "../../MatrixRepresentation.h"
+#include "../../util/AdjList.h"
 class KruskalMatrix: public MatrixRepresentation{
 private:
     /**

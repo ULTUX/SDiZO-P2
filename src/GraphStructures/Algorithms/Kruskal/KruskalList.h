@@ -6,7 +6,7 @@
 #define SDIZO2_KRUSKALLIST_H
 
 
-#include "../ListRepresentation.h"
+#include "../../ListRepresentation.h"
 
 class KruskalList: public ListRepresentation {
 private:

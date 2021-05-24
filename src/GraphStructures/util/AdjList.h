@@ -6,7 +6,7 @@
 #define SDIZO2_ADJLIST_H
 
 #include "Connection.h"
-
+//TODO: Change findMst function to overridden start function
 class ListNode {
 public:
     ListNode(){};
@@ -40,7 +40,7 @@ private:
      */
     ListNode *getAtIndex(int i);
 
-    ListNode* getByVert(int v);
+
 
 public:
     /**
@@ -119,6 +119,15 @@ public:
      * @return Size
      */
     int getSize();
+
+    /**
+     * Get connection that includes this vertex.
+     * @param v Vertex to look for.
+     * @return
+     */
+    Connection getByVert(int v);
+
+    void setEdge(int vert, int weight);
 
 };
 

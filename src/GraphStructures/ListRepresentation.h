@@ -58,7 +58,7 @@ public:
      * @return Array of lists.
      * @throws logic_error If graph was not fully created.
      */
-    int *getAdjLists();
+    AdjList** getAdjLists();
 };
 
 

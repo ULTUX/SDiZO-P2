@@ -5,6 +5,7 @@
 #include <stdexcept>
 #include <iostream>
 #include "AdjList.h"
+#include <string>
 
 AdjList::AdjList(Connection startValue) {
     head = new ListNode();
@@ -67,7 +68,7 @@ ListNode *AdjList::getAtIndex(int i) {
         curr = curr->next;
         in++;
     }
-    if (curr->next == nullptr && in < i) throw std::logic_error("Too high index.");
+    if (curr->next == nullptr && in < i) throw std::logic_error("Too high index (index="+std::to_string(i)+").");
     return curr;
 }
 
@@ -153,15 +154,15 @@ bool AdjList::containsVert(int v) {
     return true;
 }
 
-ListNode *AdjList::getByVert(int v) {
-    if (head == nullptr) return nullptr;
+Connection AdjList::getByVert(int v) {
+    if (head == nullptr) throw std::logic_error("List is empty.");
     ListNode* curr = head;
     while (curr->next != nullptr && (curr->data.vertex != v)){
         curr = curr->next;
     }
     if (curr->next == nullptr && (curr->data.vertex != v))
-        return nullptr;
-    return curr;
+        throw std::logic_error("This vertex is not a part of list.");
+    return curr->data;
 }
 
 void AdjList::deleteVert(int v) {
@@ -189,4 +190,14 @@ int AdjList::getSize() {
         i++;
     }
     return i+1;
+}
+void AdjList::setEdge(int vert, int weight) {
+    if (!this->containsVert(vert)) return;
+    if (weight == 0) {
+        deleteVert(vert);
+        return;
+    }
+    else {
+        this->getByVert(vert).setEdge(weight);
+    }
 }
