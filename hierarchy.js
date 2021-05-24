@@ -4,9 +4,18 @@ var hierarchy =
     [ "Connection", "class_connection.html", null ],
     [ "ListNode", "class_list_node.html", null ],
     [ "ListRepresentation", "class_list_representation.html", [
-      [ "KruskalList", "class_kruskal_list.html", null ]
+      [ "BellmanFordList", "class_bellman_ford_list.html", null ],
+      [ "DijsktraList", "class_dijsktra_list.html", null ],
+      [ "FordFulkersonList", "class_ford_fulkerson_list.html", null ],
+      [ "KruskalList", "class_kruskal_list.html", null ],
+      [ "PrimsList", "class_prims_list.html", null ]
     ] ],
     [ "MatrixRepresentation", "class_matrix_representation.html", [
-      [ "KruskalMatrix", "class_kruskal_matrix.html", null ]
-    ] ]
+      [ "BellmanFordMatrix", "class_bellman_ford_matrix.html", null ],
+      [ "DijsktraMatrix", "class_dijsktra_matrix.html", null ],
+      [ "FordFulkersonMatrix", "class_ford_fulkerson_matrix.html", null ],
+      [ "KruskalMatrix", "class_kruskal_matrix.html", null ],
+      [ "PrimsMatrix", "class_prims_matrix.html", null ]
+    ] ],
+    [ "Queue", "class_queue.html", null ]
 ];

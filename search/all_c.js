@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unionvert_33',['unionVert',['../class_kruskal_matrix.html#ac67a4d63b3906ed89846dcd8199ff633',1,'KruskalMatrix']]]
+  ['queue_43',['Queue',['../class_queue.html',1,'Queue'],['../class_queue.html#a1e85ea19bc49931cfcc392533735b0c5',1,'Queue::Queue()']]]
 ];

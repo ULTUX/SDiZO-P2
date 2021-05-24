@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['matrixrepresentation_41',['MatrixRepresentation',['../class_matrix_representation.html',1,'']]]
+  ['fordfulkersonlist_58',['FordFulkersonList',['../class_ford_fulkerson_list.html',1,'']]],
+  ['fordfulkersonmatrix_59',['FordFulkersonMatrix',['../class_ford_fulkerson_matrix.html',1,'']]]
 ];

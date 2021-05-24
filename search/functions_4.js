@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['indexof_55',['indexOf',['../class_adj_list.html#a4a4fa676e6eeff8a3e1e68cf5a92033f',1,'AdjList']]],
-  ['init_56',['init',['../class_kruskal_matrix.html#a4bf36ff3c0264d3c8ebfe40480edc42e',1,'KruskalMatrix']]]
+  ['find_76',['find',['../class_kruskal_matrix.html#a04e23ca428ad3f20c23397e9a596cd1d',1,'KruskalMatrix']]],
+  ['findmin_77',['findMin',['../class_dijsktra_list.html#aa7e7485bca76458cac448b2d9925f4a8',1,'DijsktraList::findMin()'],['../class_dijsktra_matrix.html#a4c6c4d4952e02291a0ea65b577e3a545',1,'DijsktraMatrix::findMin()'],['../class_prims_list.html#aa37762b1dad06f079d02451a0abd19d2',1,'PrimsList::findMin()'],['../class_prims_matrix.html#ac71a857d7110a54bc88f0000c90eb4dd',1,'PrimsMatrix::findMin()']]],
+  ['findmst_78',['findMST',['../class_kruskal_matrix.html#a0489c9bcffa9a5dc957cbf5616d1b08a',1,'KruskalMatrix::findMST()'],['../class_prims_list.html#a7562cce680357b1fc034014206c86fbf',1,'PrimsList::findMST()'],['../class_prims_matrix.html#ac3c7dccc5f43e911a732b7cdb96a8bc8',1,'PrimsMatrix::findMST()']]],
+  ['findnode_79',['findNode',['../class_adj_list.html#a75fbf6c3da23cf71241edb0c391b4770',1,'AdjList']]],
+  ['fordfulkersonlist_80',['FordFulkersonList',['../class_ford_fulkerson_list.html#aa383208fcd02f6cf4d48fbc2600f52f3',1,'FordFulkersonList']]],
+  ['fordfulkersonmatrix_81',['FordFulkersonMatrix',['../class_ford_fulkerson_matrix.html#a25a1d8338c071b1a7e03db502e4411b9',1,'FordFulkersonMatrix']]]
 ];

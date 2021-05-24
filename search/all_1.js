@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['connection_4',['Connection',['../class_connection.html',1,'']]],
-  ['containsvert_5',['containsVert',['../class_adj_list.html#ab72632e979004feb68e2649e565a9188',1,'AdjList']]],
-  ['curredgesize_6',['currEdgeSize',['../class_list_representation.html#ae04c828132a76ec58e8fb4dd68329b1e',1,'ListRepresentation::currEdgeSize()'],['../class_matrix_representation.html#aa375b368d7803f01b1f5968e0b1f0c13',1,'MatrixRepresentation::currEdgeSize()']]]
+  ['bellmanfordlist_5',['BellmanFordList',['../class_bellman_ford_list.html',1,'']]],
+  ['bellmanfordmatrix_6',['BellmanFordMatrix',['../class_bellman_ford_matrix.html',1,'BellmanFordMatrix'],['../class_bellman_ford_matrix.html#aa8a1583289f746aabbb33645c681614c',1,'BellmanFordMatrix::BellmanFordMatrix()']]],
+  ['bfs_7',['bfs',['../class_ford_fulkerson_list.html#aa2103b37291f346adbf2f8bad7c2b447',1,'FordFulkersonList::bfs()'],['../class_ford_fulkerson_matrix.html#abc1ea4ee3a371014c0f1629e139159f0',1,'FordFulkersonMatrix::bfs()']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['listnode_39',['ListNode',['../class_list_node.html',1,'']]],
-  ['listrepresentation_40',['ListRepresentation',['../class_list_representation.html',1,'']]]
+  ['dijsktralist_56',['DijsktraList',['../class_dijsktra_list.html',1,'']]],
+  ['dijsktramatrix_57',['DijsktraMatrix',['../class_dijsktra_matrix.html',1,'']]]
 ];

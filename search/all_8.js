@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['matrixrepresentation_24',['MatrixRepresentation',['../class_matrix_representation.html',1,'MatrixRepresentation'],['../class_matrix_representation.html#a3f3b825488c458215cd6a74c4d857a24',1,'MatrixRepresentation::MatrixRepresentation()']]],
-  ['mincost_25',['minCost',['../class_kruskal_matrix.html#aa79522475cb9812429212b66c82d0123',1,'KruskalMatrix']]]
+  ['kruskallist_31',['KruskalList',['../class_kruskal_list.html',1,'']]],
+  ['kruskalmatrix_32',['KruskalMatrix',['../class_kruskal_matrix.html',1,'KruskalMatrix'],['../class_kruskal_matrix.html#a065d761b725591ba6d392a7e188b8f6a',1,'KruskalMatrix::KruskalMatrix()']]]
 ];

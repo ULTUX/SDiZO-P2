@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['get_12',['get',['../class_adj_list.html#a464141461a6adce64e3170156a0f4282',1,'AdjList']]],
-  ['getadjlists_13',['getAdjLists',['../class_list_representation.html#a3300ebd363981da82cd13c9371c3c41e',1,'ListRepresentation']]],
-  ['getadjmatrix_14',['getAdjMatrix',['../class_matrix_representation.html#a0129733efd906e0b43d354bf05ce7930',1,'MatrixRepresentation']]],
-  ['getatindex_15',['getAtIndex',['../class_adj_list.html#a5546cd7e9019e2fd29b2121ac68c18dd',1,'AdjList']]],
-  ['getlastelement_16',['getLastElement',['../class_adj_list.html#a2c7ef78937f55bdc4320aaf971ad2e27',1,'AdjList']]],
-  ['getsize_17',['getSize',['../class_adj_list.html#a438146b413c281d321a09e5c3f8c3314',1,'AdjList']]]
+  ['edgesize_13',['edgeSize',['../class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e',1,'ListRepresentation::edgeSize()'],['../class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b',1,'MatrixRepresentation::edgeSize()']]],
+  ['endvert_14',['endVert',['../class_list_representation.html#a3ed170b5fbbeb9cc9c7a82679014eb35',1,'ListRepresentation::endVert()'],['../class_matrix_representation.html#a2f3deeccafb365154a5b2b678d245590',1,'MatrixRepresentation::endVert()']]]
 ];
