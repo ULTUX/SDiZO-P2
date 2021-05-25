@@ -4,4 +4,35 @@ project(SDiZO2)
 set(CMAKE_CXX_STANDARD 14)
 #set(CMAKE_EXE_LINKER_FLAGS "-static")
 link_directories()
-add_executable(SDiZO2 main.cpp src/GraphStructures/GraphRepresentations/MatrixRepresentation.cpp src/GraphStructures/GraphRepresentations/MatrixRepresentation.h src/GraphStructures/GraphRepresentations/ListRepresentation.cpp src/GraphStructures/GraphRepresentations/ListRepresentation.h src/GraphStructures/util/AdjList.cpp src/GraphStructures/util/AdjList.h src/GraphStructures/Algorithms/Kruskal/KruskalMatrix.cpp src/GraphStructures/Algorithms/Kruskal/KruskalMatrix.h src/GraphStructures/Algorithms/Kruskal/KruskalList.cpp src/GraphStructures/Algorithms/Kruskal/KruskalList.h src/GraphStructures/Algorithms/Prims/PrimsMatrix.cpp src/GraphStructures/Algorithms/Prims/PrimsMatrix.h src/GraphStructures/Algorithms/Prims/PrimsList.cpp src/GraphStructures/Algorithms/Prims/PrimsList.h src/GraphStructures/Algorithms/Dijsktra/DijsktraMatrix.cpp src/GraphStructures/Algorithms/Dijsktra/DijsktraMatrix.h src/GraphStructures/Algorithms/Dijsktra/DijsktraList.cpp src/GraphStructures/Algorithms/Dijsktra/DijsktraList.h src/GraphStructures/Algorithms/BellmanFord/BellmanFordList.cpp src/GraphStructures/Algorithms/BellmanFord/BellmanFordList.h src/GraphStructures/Algorithms/BellmanFord/BellmanFordMatrix.cpp src/GraphStructures/Algorithms/BellmanFord/BellmanFordMatrix.h src/GraphStructures/Algorithms/FordFulkerson/FordFulkersonMatrix.cpp src/GraphStructures/Algorithms/FordFulkerson/FordFulkersonMatrix.h src/GraphStructures/util/Queue.cpp src/GraphStructures/util/Queue.h src/GraphStructures/Algorithms/FordFulkerson/FordFulkersonList.cpp src/GraphStructures/Algorithms/FordFulkerson/FordFulkersonList.h)
+add_executable(SDiZO2 main.cpp
+        src/GraphRepresentations/MatrixRepresentation.cpp
+        src/GraphRepresentations/MatrixRepresentation.h
+        src/GraphRepresentations/ListRepresentation.cpp
+        src/GraphRepresentations/ListRepresentation.h
+        src/util/AdjList.cpp src/util/AdjList.h
+        src/Algorithms/Kruskal/KruskalMatrix.cpp
+        src/Algorithms/Kruskal/KruskalMatrix.h
+        src/Algorithms/Kruskal/KruskalList.cpp
+        src/Algorithms/Kruskal/KruskalList.h
+        src/Algorithms/Prims/PrimsMatrix.cpp
+        src/Algorithms/Prims/PrimsMatrix.h
+        src/Algorithms/Prims/PrimsList.cpp
+        src/Algorithms/Prims/PrimsList.h
+        src/Algorithms/Dijsktra/DijsktraMatrix.cpp
+        src/Algorithms/Dijsktra/DijsktraMatrix.h
+        src/Algorithms/Dijsktra/DijsktraList.cpp
+        src/Algorithms/Dijsktra/DijsktraList.h
+        src/Algorithms/BellmanFord/BellmanFordList.cpp
+        src/Algorithms/BellmanFord/BellmanFordList.h
+        src/Algorithms/BellmanFord/BellmanFordMatrix.cpp
+        src/Algorithms/BellmanFord/BellmanFordMatrix.h
+        src/Algorithms/FordFulkerson/FordFulkersonMatrix.cpp
+        src/Algorithms/FordFulkerson/FordFulkersonMatrix.h
+        src/util/Queue.cpp src/util/Queue.h
+        src/Algorithms/FordFulkerson/FordFulkersonList.cpp
+        src/Algorithms/FordFulkerson/FordFulkersonList.h
+        src/IO/CSVWriter.h
+        src/IO/CSVWriter.cpp
+        src/IO/FileReader.h
+        src/IO/FileReader.cpp
+        )

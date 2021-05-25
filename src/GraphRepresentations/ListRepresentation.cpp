@@ -3,8 +3,9 @@
 //
 
 #include <stdexcept>
+#include <iostream>
 #include "ListRepresentation.h"
-
+using namespace std;
 ListRepresentation::ListRepresentation(int vertSize, int edgeSize, int startVert, int endVert, bool isDirected) : vertSize(vertSize),
                                                                                                  edgeSize(edgeSize),
                                                                                                  startVert(startVert),
@@ -60,4 +61,29 @@ void ListRepresentation::addConnection(int begin, int end, int weight) {
 
 AdjList **ListRepresentation::getAdjLists() {
     return this->adjLists;
+}
+
+void ListRepresentation::setEdgeSize(int n) {
+    this->edgeSize = n;
+}
+
+void ListRepresentation::setVertSize(int n) {
+    this->vertSize = n;
+}
+
+void ListRepresentation::setEndingVertex(int v) {
+    this->endVert = v;
+}
+
+void ListRepresentation::setStartingVertex(int v) {
+    this->startVert = v;
+}
+
+void ListRepresentation::print() {
+    for (int i = 0; i < vertSize; i++){
+        cout<<"From "<<i<<":\n";
+        for (int j = 0; j < adjLists[i]->getSize(); j++){
+            cout<<"\tTo: "<<adjLists[i]->get(j).vertex<<", weight: "<<adjLists[i]->get(j).edge<<endl;
+        }
+    }
 }

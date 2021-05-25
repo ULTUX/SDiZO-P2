@@ -76,6 +76,31 @@ public:
      * Start algorithm (for derived classes).
      */
     virtual void start(){};
+
+    /**
+     * Set starting vertex of this graph.
+     * @param v Vertex num.
+     */
+    void setStartingVertex(int v);
+
+    /**
+     * Set ending vertex of this graph.
+     * @param v Vertex num.
+     */
+    void setEndingVertex(int v);
+
+    /**
+     * Set vertex size of this graph.
+     * @param n Size.
+     */
+    void setVertSize(int n);
+
+    /**
+     * Set edge size of this graph.
+     * @param n Size.
+     */
+    void setEdgeSize(int n);
+
 };
 
 

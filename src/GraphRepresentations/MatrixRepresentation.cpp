@@ -66,3 +66,19 @@ void MatrixRepresentation::print() {
     std::cout<<std::endl;
 
 }
+
+void MatrixRepresentation::setEdgeSize(int n) {
+    this->edgeSize = n;
+}
+
+void MatrixRepresentation::setVertSize(int n) {
+    this->vertSize = n;
+}
+
+void MatrixRepresentation::setEndingVertex(int v) {
+    this->endVert = v;
+}
+
+void MatrixRepresentation::setStartingVertex(int v) {
+    this->startVert = v;
+}

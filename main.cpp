@@ -1,16 +1,17 @@
 
 #include <iostream>
-#include "src/GraphStructures/util/AdjList.h"
-#include "src/GraphStructures/Algorithms/Kruskal/KruskalMatrix.h"
-#include "src/GraphStructures/Algorithms/Kruskal/KruskalList.h"
-#include "src/GraphStructures/Algorithms/Prims/PrimsMatrix.h"
-#include "src/GraphStructures/Algorithms/Prims/PrimsList.h"
-#include "src/GraphStructures/Algorithms/Dijsktra/DijsktraMatrix.h"
-#include "src/GraphStructures/Algorithms/Dijsktra/DijsktraList.h"
-#include "src/GraphStructures/Algorithms/BellmanFord/BellmanFordList.h"
-#include "src/GraphStructures/Algorithms/BellmanFord/BellmanFordMatrix.h"
-#include "src/GraphStructures/Algorithms/FordFulkerson/FordFulkersonMatrix.h"
-#include "src/GraphStructures/Algorithms/FordFulkerson/FordFulkersonList.h"
+#include "src/util/AdjList.h"
+#include "src/Algorithms/Kruskal/KruskalMatrix.h"
+#include "src/Algorithms/Kruskal/KruskalList.h"
+#include "src/Algorithms/Prims/PrimsMatrix.h"
+#include "src/Algorithms/Prims/PrimsList.h"
+#include "src/Algorithms/Dijsktra/DijsktraMatrix.h"
+#include "src/Algorithms/Dijsktra/DijsktraList.h"
+#include "src/Algorithms/BellmanFord/BellmanFordList.h"
+#include "src/Algorithms/BellmanFord/BellmanFordMatrix.h"
+#include "src/Algorithms/FordFulkerson/FordFulkersonMatrix.h"
+#include "src/Algorithms/FordFulkerson/FordFulkersonList.h"
+#include "src/IO/FileReader.h"
 
 using namespace std;
 int main() {
@@ -90,23 +91,32 @@ int main() {
 //    matrix.start();
 
     FordFulkersonMatrix matrix(5, 7, 0, 4);
-    matrix.addConnection(0, 1, 4);
-    matrix.addConnection(0, 3, 1);
-    matrix.addConnection(0, 2, 2);
-    matrix.addConnection(1, 2, 3);
-    matrix.addConnection(2, 3, 7);
-    matrix.addConnection(2, 4, 6);
-    matrix.addConnection(3, 4, 5);
+//    matrix.addConnection(0, 1, 4);
+//    matrix.addConnection(0, 3, 1);
+//    matrix.addConnection(0, 2, 2);
+//    matrix.addConnection(1, 2, 3);
+//    matrix.addConnection(2, 3, 7);
+//    matrix.addConnection(2, 4, 6);
+//    matrix.addConnection(3, 4, 5);
+//    matrix.start();
+//
+//    FordFulkersonList  list(5, 7, 0, 4);
+//    list.addConnection(0, 1, 4);
+//    list.addConnection(0, 3, 1);
+//    list.addConnection(0, 2, 2);
+//    list.addConnection(1, 2, 3);
+//    list.addConnection(2, 3, 7);
+//    list.addConnection(2, 4, 6);
+//    list.addConnection(3, 4, 5);
+//    list.start();
+    FileReader readerd("graph.txt");
+    readerd.readToAdjMatrix(&matrix);
     matrix.start();
-
-    FordFulkersonList  list(5, 7, 0, 4);
-    list.addConnection(0, 1, 4);
-    list.addConnection(0, 3, 1);
-    list.addConnection(0, 2, 2);
-    list.addConnection(1, 2, 3);
-    list.addConnection(2, 3, 7);
-    list.addConnection(2, 4, 6);
-    list.addConnection(3, 4, 5);
+    matrix.print();
+    FordFulkersonList list(5, 7, 0, 4);
+    FileReader readerdd("graph.txt");
+    readerdd.readToAdjList(&list);
+    list.print();
     list.start();
     return 0;
 }
