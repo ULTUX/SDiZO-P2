@@ -49,14 +49,12 @@ public:
      * @param vertSize Amount of vertices in this graph.
      * @param edgeSize Amount of edges in this graph.
      */
-    KruskalMatrix(int vertSize, int edgeSize) : MatrixRepresentation(vertSize, edgeSize, 0, 0, false) {
-        parent = new int[vertSize];
-    }
+    KruskalMatrix(int vertSize, int edgeSize) : MatrixRepresentation(vertSize, edgeSize, 0, 0, false) {}
 
     /**
      * Start Kruskal algorithm.
      */
-    void findMST();
+    void start() override;
 };
 
 

@@ -45,9 +45,7 @@ void KruskalList::start() {
             cout<<"Adding edge: "<<vert1 <<"--("<<min<<")---"<<vert2<<endl;
             minCost += min;
     }
-    cout<<"Min cost: "<<minCost<<endl;
-
-    this->print();
+    cout<<"Min cost: "<<minCost<<endl<<endl;
 
 }
 

@@ -2,8 +2,8 @@
 // Created by Wladyslaw Nowak on 15.04.2021.
 //
 
-#ifndef SDIZO1_CSVWRITER_H
-#define SDIZO1_CSVWRITER_H
+#ifndef SDIZO2_CSVWRITER_H
+#define SDIZO2_CSVWRITER_H
 
 #include <fstream>
 
@@ -55,4 +55,4 @@ public:
 };
 
 
-#endif //SDIZO1_CSVWRITER_H
+#endif //SDIZO2_CSVWRITER_H

@@ -2,8 +2,8 @@
 // Created by Wladyslaw Nowak on 11/04/2021.
 //
 
-#ifndef SDIZO1_FILEREADER_H
-#define SDIZO1_FILEREADER_H
+#ifndef SDIZO2_FILEREADER_H
+#define SDIZO2_FILEREADER_H
 
 #include <fstream>
 #include <iostream>
@@ -95,4 +95,4 @@ public:
 };
 
 
-#endif //SDIZO1_FILEREADER_H
+#endif //SDIZO2_FILEREADER_H

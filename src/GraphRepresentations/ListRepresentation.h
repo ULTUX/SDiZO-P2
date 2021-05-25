@@ -81,7 +81,8 @@ public:
     void setEndingVertex(int v);
 
     /**
-     * Set vertex size of this graph.
+     * Set vertex size of this graph. <br/>
+     * WARNING: This operation completely clears graph data.
      * @param n Size.
      */
     void setVertSize(int n);
@@ -96,6 +97,12 @@ public:
      * Print graph.
      */
     void print();
+
+    /**
+     * Clone graph data.
+     * @param representation Object to be cloned from.
+     */
+    void clone(ListRepresentation* representation);
 };
 
 

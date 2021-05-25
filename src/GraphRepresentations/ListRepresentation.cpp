@@ -68,7 +68,18 @@ void ListRepresentation::setEdgeSize(int n) {
 }
 
 void ListRepresentation::setVertSize(int n) {
+
+    for (int i = 0; i < vertSize; i++) {
+        delete adjLists[i];
+    }
     this->vertSize = n;
+
+    adjLists = new AdjList*[vertSize];
+
+    for (int i = 0; i < vertSize; i++) {
+        adjLists[i] = new AdjList();
+    }
+
 }
 
 void ListRepresentation::setEndingVertex(int v) {
@@ -84,6 +95,16 @@ void ListRepresentation::print() {
         cout<<"From "<<i<<":\n";
         for (int j = 0; j < adjLists[i]->getSize(); j++){
             cout<<"\tTo: "<<adjLists[i]->get(j).vertex<<", weight: "<<adjLists[i]->get(j).edge<<endl;
+        }
+    }
+}
+
+void ListRepresentation::clone(ListRepresentation* representation) {
+    this->setVertSize(representation->vertSize);
+    this->setEdgeSize(representation->edgeSize);
+    for (int i = 0; i < representation->vertSize; i++) {
+        for (int j = 0; j < representation->adjLists[i]->getSize(); j++){
+            this->adjLists[i]->add(representation->adjLists[i]->get(j));
         }
     }
 }

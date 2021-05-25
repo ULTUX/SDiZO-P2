@@ -12,6 +12,7 @@
 #include "src/Algorithms/FordFulkerson/FordFulkersonMatrix.h"
 #include "src/Algorithms/FordFulkerson/FordFulkersonList.h"
 #include "src/IO/FileReader.h"
+#include "src/Menu.h"
 
 using namespace std;
 int main() {
@@ -90,7 +91,7 @@ int main() {
 //    matrix.addConnection(4, 5, 1);
 //    matrix.start();
 
-    FordFulkersonMatrix matrix(5, 7, 0, 4);
+//    FordFulkersonMatrix matrix(2, 1, 0, 4);
 //    matrix.addConnection(0, 1, 4);
 //    matrix.addConnection(0, 3, 1);
 //    matrix.addConnection(0, 2, 2);
@@ -109,14 +110,16 @@ int main() {
 //    list.addConnection(2, 4, 6);
 //    list.addConnection(3, 4, 5);
 //    list.start();
-    FileReader readerd("graph.txt");
-    readerd.readToAdjMatrix(&matrix);
-    matrix.start();
-    matrix.print();
-    FordFulkersonList list(5, 7, 0, 4);
-    FileReader readerdd("graph.txt");
-    readerdd.readToAdjList(&list);
-    list.print();
-    list.start();
+//    FileReader readerd("graph.txt");
+//    readerd.readToAdjMatrix(&matrix);
+//    matrix.start();
+//    matrix.print();
+//    FordFulkersonList list(3, 8, 0, 4);
+//    FileReader readerdd("graph.txt");
+//    readerdd.readToAdjList(&list);
+//    list.print();
+//    list.start();
+    Menu menu;
+
     return 0;
 }

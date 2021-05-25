@@ -91,6 +91,7 @@ public:
 
     /**
      * Set vertex size of this graph.
+     * WARNING: This operation completely clears graph data.
      * @param n Size.
      */
     void setVertSize(int n);
@@ -100,6 +101,12 @@ public:
      * @param n Size.
      */
     void setEdgeSize(int n);
+
+     /**
+     * Clone graph data.
+     * @param representation Object to be cloned from.
+     */
+    void clone(MatrixRepresentation* representation);
 
 };
 
