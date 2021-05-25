@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parent_156',['parent',['../class_kruskal_list.html#a09f5589a81edb5edec347a3221a669c8',1,'KruskalList::parent()'],['../class_kruskal_matrix.html#af3de3ac8b39aa30097ae88152a797b85',1,'KruskalMatrix::parent()']]]
+  ['next_171',['next',['../class_list_node.html#ac7af9e18e0586f13d59a52b3501ac4ca',1,'ListNode']]]
 ];

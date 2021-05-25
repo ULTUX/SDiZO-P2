@@ -2,6 +2,7 @@ var class_list_representation =
 [
     [ "ListRepresentation", "class_list_representation.html#a5dd6591ecf620095c1bc22789cb90472", null ],
     [ "addConnection", "class_list_representation.html#a6b913555ee93b55b7c02df0c60551d9d", null ],
+    [ "clone", "class_list_representation.html#a548f8b839a5fa86a387c134cacc04071", null ],
     [ "getAdjLists", "class_list_representation.html#a1021de7cfb40351e725c388751c9e00d", null ],
     [ "print", "class_list_representation.html#af2f16f84abacd759706a24bdab682f2e", null ],
     [ "setEdgeSize", "class_list_representation.html#a7e331b064cc5fd8e00cb89988e3bbc81", null ],

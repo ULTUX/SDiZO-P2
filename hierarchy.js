@@ -19,5 +19,6 @@ var hierarchy =
       [ "KruskalMatrix", "class_kruskal_matrix.html", null ],
       [ "PrimsMatrix", "class_prims_matrix.html", null ]
     ] ],
+    [ "Menu", "class_menu.html", null ],
     [ "Queue", "class_queue.html", null ]
 ];

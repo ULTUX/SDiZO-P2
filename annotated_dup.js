@@ -15,6 +15,7 @@ var annotated_dup =
     [ "ListNode", "class_list_node.html", "class_list_node" ],
     [ "ListRepresentation", "class_list_representation.html", "class_list_representation" ],
     [ "MatrixRepresentation", "class_matrix_representation.html", "class_matrix_representation" ],
+    [ "Menu", "class_menu.html", "class_menu" ],
     [ "PrimsList", "class_prims_list.html", "class_prims_list" ],
     [ "PrimsMatrix", "class_prims_matrix.html", "class_prims_matrix" ],
     [ "Queue", "class_queue.html", "class_queue" ]

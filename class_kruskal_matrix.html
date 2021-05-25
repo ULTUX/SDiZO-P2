@@ -108,8 +108,8 @@ Diagram dziedziczenia dla KruskalMatrix</div>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a065d761b725591ba6d392a7e188b8f6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_matrix.html#a065d761b725591ba6d392a7e188b8f6a">KruskalMatrix</a> (int <a class="el" href="class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c">vertSize</a>, int <a class="el" href="class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b">edgeSize</a>)</td></tr>
 <tr class="separator:a065d761b725591ba6d392a7e188b8f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0489c9bcffa9a5dc957cbf5616d1b08a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_matrix.html#a0489c9bcffa9a5dc957cbf5616d1b08a">findMST</a> ()</td></tr>
-<tr class="separator:a0489c9bcffa9a5dc957cbf5616d1b08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29cfb476912aafd16b14ffa597b48d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_matrix.html#a29cfb476912aafd16b14ffa597b48d57">start</a> () override</td></tr>
+<tr class="separator:a29cfb476912aafd16b14ffa597b48d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_matrix_representation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_matrix_representation')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_matrix_representation.html">MatrixRepresentation</a></td></tr>
 <tr class="memitem:a3f3b825488c458215cd6a74c4d857a24 inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a3f3b825488c458215cd6a74c4d857a24">MatrixRepresentation</a> (int <a class="el" href="class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c">vertSize</a>, int <a class="el" href="class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b">edgeSize</a>, int <a class="el" href="class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945">startVert</a>, int <a class="el" href="class_matrix_representation.html#a2f3deeccafb365154a5b2b678d245590">endVert</a>, bool isDirected)</td></tr>
 <tr class="separator:a3f3b825488c458215cd6a74c4d857a24 inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,8 +119,6 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a0129733efd906e0b43d354bf05ce7930 inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07783dfaa508ca1e53f658b46144cbca inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a07783dfaa508ca1e53f658b46144cbca">print</a> ()</td></tr>
 <tr class="separator:a07783dfaa508ca1e53f658b46144cbca inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f7c50769966d2e7708c130457dfdba inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a15f7c50769966d2e7708c130457dfdba">start</a> ()</td></tr>
-<tr class="separator:a15f7c50769966d2e7708c130457dfdba inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0726c10dd47fd584ce5f2d22311d32f5 inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a0726c10dd47fd584ce5f2d22311d32f5">setStartingVertex</a> (int v)</td></tr>
 <tr class="separator:a0726c10dd47fd584ce5f2d22311d32f5 inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9ea981f516ce0922cdbf3495b747c9c inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#ab9ea981f516ce0922cdbf3495b747c9c">setEndingVertex</a> (int v)</td></tr>
@@ -129,6 +127,8 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:afb5fc124a7b9d91a09aedc5a43bbfedf inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9274e62c6cdeb6ed2958dc8aed314571 inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a9274e62c6cdeb6ed2958dc8aed314571">setEdgeSize</a> (int n)</td></tr>
 <tr class="separator:a9274e62c6cdeb6ed2958dc8aed314571 inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6617317dc60d1602e57ff62e3da2c9 inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a4b6617317dc60d1602e57ff62e3da2c9">clone</a> (<a class="el" href="class_matrix_representation.html">MatrixRepresentation</a> *representation)</td></tr>
+<tr class="separator:a4b6617317dc60d1602e57ff62e3da2c9 inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Metody prywatne</h2></td></tr>
@@ -245,24 +245,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 
 </div>
 </div>
-<a id="a0489c9bcffa9a5dc957cbf5616d1b08a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0489c9bcffa9a5dc957cbf5616d1b08a">&#9670;&nbsp;</a></span>findMST()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void KruskalMatrix::findMST </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Start Kruskal algorithm. </p>
-
-</div>
-</div>
 <a id="a4bf36ff3c0264d3c8ebfe40480edc42e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bf36ff3c0264d3c8ebfe40480edc42e">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -286,6 +268,34 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 </table>
 </div><div class="memdoc">
 <p>Init algorithm (fill parent array). </p>
+
+</div>
+</div>
+<a id="a29cfb476912aafd16b14ffa597b48d57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29cfb476912aafd16b14ffa597b48d57">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KruskalMatrix::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start Kruskal algorithm. </p>
+
+<p>Reimplementowana z <a class="el" href="class_matrix_representation.html#a15f7c50769966d2e7708c130457dfdba">MatrixRepresentation</a>.</p>
 
 </div>
 </div>

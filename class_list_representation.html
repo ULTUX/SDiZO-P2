@@ -126,6 +126,8 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a7e331b064cc5fd8e00cb89988e3bbc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2f16f84abacd759706a24bdab682f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#af2f16f84abacd759706a24bdab682f2e">print</a> ()</td></tr>
 <tr class="separator:af2f16f84abacd759706a24bdab682f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548f8b839a5fa86a387c134cacc04071"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a548f8b839a5fa86a387c134cacc04071">clone</a> (<a class="el" href="class_list_representation.html">ListRepresentation</a> *representation)</td></tr>
+<tr class="separator:a548f8b839a5fa86a387c134cacc04071"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atrybuty chronione</h2></td></tr>
@@ -189,6 +191,30 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
   <table class="exception">
     <tr><td class="paramname">invalid_argument</td><td>If wrong parameters were passed. </td></tr>
     <tr><td class="paramname">logic_error</td><td>If edgeSize is reached. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a548f8b839a5fa86a387c134cacc04071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a548f8b839a5fa86a387c134cacc04071">&#9670;&nbsp;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListRepresentation::clone </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_list_representation.html">ListRepresentation</a> *&#160;</td>
+          <td class="paramname"><em>representation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Clone graph data. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">representation</td><td>Object to be cloned from. </td></tr>
   </table>
   </dd>
 </dl>
@@ -324,7 +350,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set vertex size of this graph. </p><dl class="params"><dt>Parametry</dt><dd>
+<p>Set vertex size of this graph. <br  />
+ WARNING: This operation completely clears graph data. </p><dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Size. </td></tr>
   </table>
