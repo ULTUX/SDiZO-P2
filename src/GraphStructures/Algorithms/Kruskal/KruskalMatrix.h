@@ -6,8 +6,12 @@
 #define SDIZO2_KRUSKALMATRIX_H
 
 
-#include "../../MatrixRepresentation.h"
+#include "../../GraphRepresentations/MatrixRepresentation.h"
 #include "../../util/AdjList.h"
+
+/**
+ * Kruskal algorithm adjacency matrix implementation.
+ */
 class KruskalMatrix: public MatrixRepresentation{
 private:
     /**

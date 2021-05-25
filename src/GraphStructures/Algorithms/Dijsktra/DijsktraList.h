@@ -5,9 +5,12 @@
 #ifndef SDIZO2_DIJSKTRALIST_H
 #define SDIZO2_DIJSKTRALIST_H
 
-#include "../../ListRepresentation.h"
+#include "../../GraphRepresentations/ListRepresentation.h"
 
-//TODO: Override start function.
+/**
+ * Dijsktra's algorithm adjacency list implementation. <br/>
+ * Based on: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Pseudocode.
+ */
 class DijsktraList: public ListRepresentation {
 private:
     /**
@@ -27,7 +30,7 @@ public:
     /**
      * Start Dijsktra's algorithm.
      */
-    void start();
+    void start() override;
 };
 
 

@@ -2,16 +2,20 @@
 // Created by Wladyslaw Nowak on 17.05.2021.
 //
 
-#ifndef SDIZO2_MATRIXREPRESENTATION_H
-#define SDIZO2_MATRIXREPRESENTATION_H
+#ifndef SDIZO2_LISTREPRESENTATION_H
+#define SDIZO2_LISTREPRESENTATION_H
 
 
-class MatrixRepresentation {
+#include "../util/AdjList.h"
+
+class ListRepresentation {
+
 protected:
+
     /**
-     * Adjacency matrix.
+     * Adjacency list of this representation.
      */
-    int **adjMatrix;
+    AdjList** adjLists;
 
     /**
      * Amount of vertices in this graph.
@@ -39,18 +43,10 @@ protected:
     int currEdgeSize = 0;
 
     bool isDirected;
-
 public:
-    /**
-     * Create new matrix representation, set all graph parameters and allocate new adjacency matrix.
-     * @param vertSize Amount of vertices in this graph.
-     * @param edgeSize Amount of edges in this graph.
-     * @param startVert Starting vertex.
-     * @param endVert Ending vertex.
-     */
-    MatrixRepresentation(int vertSize, int edgeSize, int startVert, int endVert, bool isDirected);
+    ListRepresentation(int vertSize, int edgeSize, int startVert, int endVert, bool isDirected);
 
-    virtual /**
+    /**
      * Add new connection to this graph (new edge).
      * @param begin Edges starting vertex.
      * @param end Edges ending vertex.
@@ -62,17 +58,16 @@ public:
 
     /**
      * Get adjacency matrix.
-     * @return 2D array vertSize x vertSize.
+     * @return Array of lists.
      * @throws logic_error If graph was not fully created.
      */
-    int **getAdjMatrix();
+    AdjList** getAdjLists();
 
-    /**
-     * Display whole matrix representation of this graph.
+     /**
+     * Start algorithm (for derived classes).
      */
-    void print();
-
+     virtual void start(){};
 };
 
 
-#endif //SDIZO2_MATRIXREPRESENTATION_H
+#endif //SDIZO2_LISTREPRESENTATION_H

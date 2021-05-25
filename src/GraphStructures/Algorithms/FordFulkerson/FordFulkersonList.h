@@ -6,8 +6,12 @@
 #define SDIZO2_FORDFULKERSONLIST_H
 
 
-#include "../../ListRepresentation.h"
+#include "../../GraphRepresentations/ListRepresentation.h"
 
+/**
+ * Ford-Fulkerson list implementation. <br/>
+ * Based on: https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/.
+ */
 class FordFulkersonList: public ListRepresentation{
 private:
     /**
@@ -27,7 +31,10 @@ public:
      */
     FordFulkersonList(int vertSize, int edgeSize, int startVert, int endVert)
             : ListRepresentation(vertSize, edgeSize, startVert, endVert, true) {};
-    void start();
+    /**
+     * Start the algorithm.
+     */
+    void start() override;
 };
 
 

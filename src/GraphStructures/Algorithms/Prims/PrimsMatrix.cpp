@@ -6,7 +6,7 @@
 #include <iostream>
 #include "PrimsMatrix.h"
 using namespace std;
-void PrimsMatrix::findMST() {
+void PrimsMatrix::start() {
     int parent[vertSize];
 
     bool isIncluded[vertSize];

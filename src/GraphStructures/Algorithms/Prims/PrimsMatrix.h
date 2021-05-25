@@ -6,8 +6,11 @@
 #define SDIZO2_PRIMSMATRIX_H
 
 
-#include "../../MatrixRepresentation.h"
-//TODO: Change findMst function to overridden start function
+#include "../../GraphRepresentations/MatrixRepresentation.h"
+
+/**
+ * Prims matrix graph algorithm.
+ */
 class PrimsMatrix: public MatrixRepresentation {
 
     /**
@@ -32,7 +35,7 @@ public:
     /**
      * Start Kruskal algorithm.
      */
-    void findMST();
+    void start();
 };
 
 

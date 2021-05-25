@@ -6,8 +6,11 @@
 #define SDIZO2_PRIMSLIST_H
 
 
-#include "../../ListRepresentation.h"
+#include "../../GraphRepresentations/ListRepresentation.h"
 
+/**
+ * Prims list graph algorithm.
+ */
 class PrimsList: public ListRepresentation{
 
     /**

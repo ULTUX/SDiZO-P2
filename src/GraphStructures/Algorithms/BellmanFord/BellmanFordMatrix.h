@@ -6,8 +6,12 @@
 #define SDIZO2_BELLMANFORDMATRIX_H
 
 
-#include "../../MatrixRepresentation.h"
+#include "../../GraphRepresentations/MatrixRepresentation.h"
 
+/**
+ * Bellman-Ford algorithm adjacency matrix implementation. <br/>
+ * Based on: https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm#Algorithm.
+ */
 class BellmanFordMatrix: public MatrixRepresentation{
 private:
 public:
@@ -22,7 +26,7 @@ public:
     /**
      * Start Bellman-Ford algorithm.
      */
-    void start();
+    void start() override;
 };
 
 

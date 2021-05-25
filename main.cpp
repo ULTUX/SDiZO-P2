@@ -22,7 +22,7 @@ int main() {
 //    matrix.addConnection(2, 3, 7);
 //    matrix.addConnection(2, 4, 6);
 //    matrix.addConnection(3, 4, 5);
-//    matrix.findMST();
+//    matrix.start();
 
 //    KruskalList list(5,7);
 //    list.addConnection(0, 1, 4);
@@ -32,7 +32,7 @@ int main() {
 //    list.addConnection(2, 3, 7);
 //    list.addConnection(2, 4, 6);
 //    list.addConnection(3, 4, 5);
-//    list.findMst();
+//    list.start();
 //    list.print();
 
 //    PrimsList matrix(5, 7);
@@ -43,7 +43,7 @@ int main() {
 //    matrix.addConnection(2, 3, 7);
 //    matrix.addConnection(2, 4, 6);
 //    matrix.addConnection(3, 4, 5);
-//    matrix.findMST();
+//    matrix.start();
 
 //    DijsktraMatrix matrix(5, 7, 0);
 //    matrix.addConnection(0, 1, 4);

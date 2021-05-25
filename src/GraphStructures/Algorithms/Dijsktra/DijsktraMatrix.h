@@ -6,8 +6,7 @@
 #define SDIZO2_DIJSKTRAMATRIX_H
 
 
-#include "../../MatrixRepresentation.h"
-//TODO: Override start function.
+#include "../../GraphRepresentations/MatrixRepresentation.h"
 class DijsktraMatrix: public MatrixRepresentation {
 private:
 /**
@@ -27,7 +26,7 @@ public:
     /**
      * Start Dijsktra's algorithm.
      */
-    void start();
+    void start() override;
 };
 
 

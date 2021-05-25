@@ -6,16 +6,28 @@
 #define SDIZO2_ADJLIST_H
 
 #include "Connection.h"
-//TODO: Change findMst function to overridden start function
+
+/**
+ * Represents single linked node in AdjList.
+ */
 class ListNode {
 public:
-    ListNode(){};
+    ListNode()= default;
+    /**
+     * Connection this node represents.
+     */
     Connection data;
+    /**
+     * Ptr to next node.
+     */
     struct ListNode *next = nullptr;
 };
 
 class AdjList {
 private:
+    /**
+     * Head of this list.
+     */
     ListNode *head = nullptr;
 
     /**
@@ -112,6 +124,10 @@ public:
      */
     bool containsVert(int v);
 
+    /**
+     * Delete vertex from list.
+     * @param v Vertex to be deleted.
+     */
     void deleteVert(int v);
 
     /**
@@ -127,6 +143,11 @@ public:
      */
     Connection getByVert(int v);
 
+    /**
+     * Set edge weight of given vertex's edge. If 0 is given the vertex will be deleted from list.
+     * @param vert Given vertex.
+     * @param weight Given weight to be set.
+     */
     void setEdge(int vert, int weight);
 
 };

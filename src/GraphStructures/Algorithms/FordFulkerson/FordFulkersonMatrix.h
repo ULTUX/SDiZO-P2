@@ -6,8 +6,12 @@
 #define SDIZO2_FORDFULKERSONMATRIX_H
 
 
-#include "../../MatrixRepresentation.h"
+#include "../../GraphRepresentations/MatrixRepresentation.h"
 
+/**
+ * Ford-Fulkerson implementation. <br/>
+ * Based on: https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/.
+ */
 class FordFulkersonMatrix: public MatrixRepresentation {
 private:
     /**

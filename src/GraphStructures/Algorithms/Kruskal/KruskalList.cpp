@@ -22,7 +22,7 @@ void KruskalList::init() {
     }
 }
 
-void KruskalList::findMst() {
+void KruskalList::start() {
     init();
 
     minCost = 0;
@@ -46,6 +46,8 @@ void KruskalList::findMst() {
             minCost += min;
     }
     cout<<"Min cost: "<<minCost<<endl;
+
+    this->print();
 
 }
 

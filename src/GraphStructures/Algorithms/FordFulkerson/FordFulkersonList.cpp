@@ -36,7 +36,7 @@ bool FordFulkersonList::bfs(int parent[]) {
 }
 
 void FordFulkersonList::start() {
-    ListRepresentation* list = new ListRepresentation(vertSize, edgeSize, startVert, endVert, true);
+    auto* list = new ListRepresentation(vertSize, edgeSize, startVert, endVert, true);
     //Init residual matrix
     for (int i = 0; i < vertSize; i++){
         for (int j = 0; j < adjLists[i]->getSize(); j++){
