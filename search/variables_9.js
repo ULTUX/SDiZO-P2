@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertsize_125',['vertSize',['../class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d',1,'ListRepresentation::vertSize()'],['../class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c',1,'MatrixRepresentation::vertSize()']]]
+  ['parent_156',['parent',['../class_kruskal_list.html#a09f5589a81edb5edec347a3221a669c8',1,'KruskalList::parent()'],['../class_kruskal_matrix.html#af3de3ac8b39aa30097ae88152a797b85',1,'KruskalMatrix::parent()']]]
 ];

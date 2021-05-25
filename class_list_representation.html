@@ -116,6 +116,16 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a1021de7cfb40351e725c388751c9e00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01dc63128fabff266334f56dbaa30bcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a01dc63128fabff266334f56dbaa30bcd">start</a> ()</td></tr>
 <tr class="separator:a01dc63128fabff266334f56dbaa30bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6605a03bb54daf5bc7e278033dec7dba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a6605a03bb54daf5bc7e278033dec7dba">setStartingVertex</a> (int v)</td></tr>
+<tr class="separator:a6605a03bb54daf5bc7e278033dec7dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de057e350597d629ddbc8d17e01094c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a5de057e350597d629ddbc8d17e01094c">setEndingVertex</a> (int v)</td></tr>
+<tr class="separator:a5de057e350597d629ddbc8d17e01094c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c016f8036d201fd19ef10ad0f9d3ee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a8c016f8036d201fd19ef10ad0f9d3ee9">setVertSize</a> (int n)</td></tr>
+<tr class="separator:a8c016f8036d201fd19ef10ad0f9d3ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e331b064cc5fd8e00cb89988e3bbc81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a7e331b064cc5fd8e00cb89988e3bbc81">setEdgeSize</a> (int n)</td></tr>
+<tr class="separator:a7e331b064cc5fd8e00cb89988e3bbc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f16f84abacd759706a24bdab682f2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#af2f16f84abacd759706a24bdab682f2e">print</a> ()</td></tr>
+<tr class="separator:af2f16f84abacd759706a24bdab682f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atrybuty chronione</h2></td></tr>
@@ -203,6 +213,120 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 <dl class="exception"><dt>Wyjątki</dt><dd>
   <table class="exception">
     <tr><td class="paramname">logic_error</td><td>If graph was not fully created. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af2f16f84abacd759706a24bdab682f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f16f84abacd759706a24bdab682f2e">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListRepresentation::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Print graph. </p>
+
+</div>
+</div>
+<a id="a7e331b064cc5fd8e00cb89988e3bbc81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e331b064cc5fd8e00cb89988e3bbc81">&#9670;&nbsp;</a></span>setEdgeSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListRepresentation::setEdgeSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set edge size oof this graph. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5de057e350597d629ddbc8d17e01094c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5de057e350597d629ddbc8d17e01094c">&#9670;&nbsp;</a></span>setEndingVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListRepresentation::setEndingVertex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set ending vertex of this graph. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Vertex num. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6605a03bb54daf5bc7e278033dec7dba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6605a03bb54daf5bc7e278033dec7dba">&#9670;&nbsp;</a></span>setStartingVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListRepresentation::setStartingVertex </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set starting vertex of this graph. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Vertex num. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8c016f8036d201fd19ef10ad0f9d3ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c016f8036d201fd19ef10ad0f9d3ee9">&#9670;&nbsp;</a></span>setVertSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ListRepresentation::setVertSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set vertex size of this graph. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Size. </td></tr>
   </table>
   </dd>
 </dl>
@@ -377,8 +501,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>src/GraphStructures/GraphRepresentations/<a class="el" href="_list_representation_8h_source.html">ListRepresentation.h</a></li>
-<li>src/GraphStructures/GraphRepresentations/ListRepresentation.cpp</li>
+<li>src/GraphRepresentations/<a class="el" href="_list_representation_8h_source.html">ListRepresentation.h</a></li>
+<li>src/GraphRepresentations/ListRepresentation.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

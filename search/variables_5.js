@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mincost_120',['minCost',['../class_kruskal_list.html#a32c464ed5a56f6ba7bc226e5945e17da',1,'KruskalList::minCost()'],['../class_kruskal_matrix.html#aa79522475cb9812429212b66c82d0123',1,'KruskalMatrix::minCost()']]]
+  ['head_151',['head',['../class_adj_list.html#a3981a17a4160208049910ccf4c715e1c',1,'AdjList']]],
+  ['headers_152',['headers',['../class_c_s_v_writer.html#a7acf29655c6589f541c9c91630340d9c',1,'CSVWriter']]]
 ];

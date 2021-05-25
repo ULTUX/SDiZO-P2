@@ -2,6 +2,8 @@ var hierarchy =
 [
     [ "AdjList", "class_adj_list.html", null ],
     [ "Connection", "class_connection.html", null ],
+    [ "CSVWriter", "class_c_s_v_writer.html", null ],
+    [ "FileReader", "class_file_reader.html", null ],
     [ "ListNode", "class_list_node.html", null ],
     [ "ListRepresentation", "class_list_representation.html", [
       [ "BellmanFordList", "class_bellman_ford_list.html", null ],
