@@ -20,10 +20,6 @@
 #include "../Algorithms/BellmanFord/BellmanFordMatrix.h"
 
 using namespace std;
-enum PushType {
-    FRONT,
-    BACK
-};
 
 /**
  * This class helps reading int data from files and creating graphs from them. <br/>
