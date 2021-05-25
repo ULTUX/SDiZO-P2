@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('class_ford_fulkerson_matrix.html','');
 <div class="title">Dokumentacja klasy FordFulkersonMatrix</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_ford_fulkerson_matrix_8h_source.html">FordFulkersonMatrix.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla FordFulkersonMatrix</div>
 <div class="dyncontent">
@@ -106,8 +108,7 @@ Diagram dziedziczenia dla FordFulkersonMatrix</div>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a25a1d8338c071b1a7e03db502e4411b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ford_fulkerson_matrix.html#a25a1d8338c071b1a7e03db502e4411b9">FordFulkersonMatrix</a> (int <a class="el" href="class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c">vertSize</a>, int <a class="el" href="class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b">edgeSize</a>, int <a class="el" href="class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945">startVert</a>, int <a class="el" href="class_matrix_representation.html#a2f3deeccafb365154a5b2b678d245590">endVert</a>)</td></tr>
 <tr class="separator:a25a1d8338c071b1a7e03db502e4411b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30af7ce0a95ef251d7e4d3aed7b296fb"><td class="memItemLeft" align="right" valign="top"><a id="a30af7ce0a95ef251d7e4d3aed7b296fb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+<tr class="memitem:a30af7ce0a95ef251d7e4d3aed7b296fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ford_fulkerson_matrix.html#a30af7ce0a95ef251d7e4d3aed7b296fb">start</a> ()</td></tr>
 <tr class="separator:a30af7ce0a95ef251d7e4d3aed7b296fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_matrix_representation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_matrix_representation')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_matrix_representation.html">MatrixRepresentation</a></td></tr>
 <tr class="memitem:a3f3b825488c458215cd6a74c4d857a24 inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a3f3b825488c458215cd6a74c4d857a24">MatrixRepresentation</a> (int <a class="el" href="class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c">vertSize</a>, int <a class="el" href="class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b">edgeSize</a>, int <a class="el" href="class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945">startVert</a>, int <a class="el" href="class_matrix_representation.html#a2f3deeccafb365154a5b2b678d245590">endVert</a>, bool isDirected)</td></tr>
@@ -149,7 +150,10 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></tr>
 <tr class="separator:aac80fa6f503b4088d4c64f3d49d55783 inherit pro_attribs_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Ford-Fulkerson implementation. <br  />
+ Based on: <a href="https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/">https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/</a>. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a25a1d8338c071b1a7e03db502e4411b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25a1d8338c071b1a7e03db502e4411b9">&#9670;&nbsp;</a></span>FordFulkersonMatrix()</h2>
 
@@ -237,6 +241,34 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
   </dd>
 </dl>
 <dl class="section return"><dt>Zwraca</dt><dd>True if there is path from start to end vertices. </dd></dl>
+
+</div>
+</div>
+<a id="a30af7ce0a95ef251d7e4d3aed7b296fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30af7ce0a95ef251d7e4d3aed7b296fb">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FordFulkersonMatrix::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start algorithm (for derived classes). </p>
+
+<p>Reimplementowana z <a class="el" href="class_matrix_representation.html#a15f7c50769966d2e7708c130457dfdba">MatrixRepresentation</a>.</p>
 
 </div>
 </div>

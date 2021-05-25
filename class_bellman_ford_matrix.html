@@ -90,6 +90,8 @@ $(document).ready(function(){initNavTree('class_bellman_ford_matrix.html',''); i
 <div class="title">Dokumentacja klasy BellmanFordMatrix</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_bellman_ford_matrix_8h_source.html">BellmanFordMatrix.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla BellmanFordMatrix</div>
 <div class="dyncontent">
@@ -104,8 +106,8 @@ Diagram dziedziczenia dla BellmanFordMatrix</div>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:aa8a1583289f746aabbb33645c681614c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bellman_ford_matrix.html#aa8a1583289f746aabbb33645c681614c">BellmanFordMatrix</a> (int <a class="el" href="class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c">vertSize</a>, int <a class="el" href="class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b">edgeSize</a>, int <a class="el" href="class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945">startVert</a>)</td></tr>
 <tr class="separator:aa8a1583289f746aabbb33645c681614c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a77e83b21a5d4971b55261eed858e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bellman_ford_matrix.html#ab8a77e83b21a5d4971b55261eed858e7">start</a> ()</td></tr>
-<tr class="separator:ab8a77e83b21a5d4971b55261eed858e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af210e014f8973e06a57c1b0f24b05264"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bellman_ford_matrix.html#af210e014f8973e06a57c1b0f24b05264">start</a> () override</td></tr>
+<tr class="separator:af210e014f8973e06a57c1b0f24b05264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_matrix_representation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_matrix_representation')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_matrix_representation.html">MatrixRepresentation</a></td></tr>
 <tr class="memitem:a3f3b825488c458215cd6a74c4d857a24 inherit pub_methods_class_matrix_representation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_matrix_representation.html#a3f3b825488c458215cd6a74c4d857a24">MatrixRepresentation</a> (int <a class="el" href="class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c">vertSize</a>, int <a class="el" href="class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b">edgeSize</a>, int <a class="el" href="class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945">startVert</a>, int <a class="el" href="class_matrix_representation.html#a2f3deeccafb365154a5b2b678d245590">endVert</a>, bool isDirected)</td></tr>
 <tr class="separator:a3f3b825488c458215cd6a74c4d857a24 inherit pub_methods_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +137,10 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></tr>
 <tr class="separator:aac80fa6f503b4088d4c64f3d49d55783 inherit pro_attribs_class_matrix_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Bellman-Ford algorithm adjacency matrix implementation. <br  />
+ Based on: <a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm#Algorithm">https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm#Algorithm</a>. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="aa8a1583289f746aabbb33645c681614c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa8a1583289f746aabbb33645c681614c">&#9670;&nbsp;</a></span>BellmanFordMatrix()</h2>
 
@@ -187,11 +192,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 </div>
 </div>
 <h2 class="groupheader">Dokumentacja funkcji składowych</h2>
-<a id="ab8a77e83b21a5d4971b55261eed858e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8a77e83b21a5d4971b55261eed858e7">&#9670;&nbsp;</a></span>start()</h2>
+<a id="af210e014f8973e06a57c1b0f24b05264"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af210e014f8973e06a57c1b0f24b05264">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void BellmanFordMatrix::start </td>
@@ -200,8 +208,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Start Bellman-Ford algorithm. </p>
+
+<p>Reimplementowana z <a class="el" href="class_matrix_representation.html#a15f7c50769966d2e7708c130457dfdba">MatrixRepresentation</a>.</p>
 
 </div>
 </div>

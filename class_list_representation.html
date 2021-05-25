@@ -114,11 +114,12 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a6b913555ee93b55b7c02df0c60551d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1021de7cfb40351e725c388751c9e00d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adj_list.html">AdjList</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a1021de7cfb40351e725c388751c9e00d">getAdjLists</a> ()</td></tr>
 <tr class="separator:a1021de7cfb40351e725c388751c9e00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01dc63128fabff266334f56dbaa30bcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a01dc63128fabff266334f56dbaa30bcd">start</a> ()</td></tr>
+<tr class="separator:a01dc63128fabff266334f56dbaa30bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Atrybuty chronione</h2></td></tr>
-<tr class="memitem:a6cf80ef53c15d82145338602f80f0393"><td class="memItemLeft" align="right" valign="top"><a id="a6cf80ef53c15d82145338602f80f0393"></a>
-<a class="el" href="class_adj_list.html">AdjList</a> **&#160;</td><td class="memItemRight" valign="bottom"><b>adjLists</b></td></tr>
+<tr class="memitem:a6cf80ef53c15d82145338602f80f0393"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adj_list.html">AdjList</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a6cf80ef53c15d82145338602f80f0393">adjLists</a></td></tr>
 <tr class="separator:a6cf80ef53c15d82145338602f80f0393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a769e11fb6d8dc443a79cd75506bcb70d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a></td></tr>
 <tr class="separator:a769e11fb6d8dc443a79cd75506bcb70d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,7 +209,58 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 
 </div>
 </div>
+<a id="a01dc63128fabff266334f56dbaa30bcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01dc63128fabff266334f56dbaa30bcd">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ListRepresentation::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start algorithm (for derived classes). </p>
+
+<p>Reimplementowana w <a class="el" href="class_kruskal_list.html#a0709160bf46a51ff0bfbd9a5caf0054b">KruskalList</a>, <a class="el" href="class_ford_fulkerson_list.html#a9ccb42ea0e98c25d726736efa2ba44b3">FordFulkersonList</a>, <a class="el" href="class_dijsktra_list.html#a568dd6c23a7ebd6cfd0a8b6f0fbda835">DijsktraList</a> i <a class="el" href="class_bellman_ford_list.html#a5821d76ed053fe3501f3c4314d5e1e1e">BellmanFordList</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a6cf80ef53c15d82145338602f80f0393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf80ef53c15d82145338602f80f0393">&#9670;&nbsp;</a></span>adjLists</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_adj_list.html">AdjList</a>** ListRepresentation::adjLists</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adjacency list of this representation. </p>
+
+</div>
+</div>
 <a id="ae04c828132a76ec58e8fb4dd68329b1e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae04c828132a76ec58e8fb4dd68329b1e">&#9670;&nbsp;</a></span>currEdgeSize</h2>
 
@@ -325,8 +377,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 </div>
 </div>
 <hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
-<li>src/GraphStructures/<a class="el" href="_list_representation_8h_source.html">ListRepresentation.h</a></li>
-<li>src/GraphStructures/ListRepresentation.cpp</li>
+<li>src/GraphStructures/GraphRepresentations/<a class="el" href="_list_representation_8h_source.html">ListRepresentation.h</a></li>
+<li>src/GraphStructures/GraphRepresentations/ListRepresentation.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

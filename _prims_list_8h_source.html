@@ -95,29 +95,29 @@ $(document).ready(function(){initNavTree('_prims_list_8h_source.html',''); initR
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SDIZO2_PRIMSLIST_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../../ListRepresentation.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../../GraphRepresentations/ListRepresentation.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_prims_list.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_prims_list.html">PrimsList</a>: <span class="keyword">public</span> <a class="code" href="class_list_representation.html">ListRepresentation</a>{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_prims_list.html#aa37762b1dad06f079d02451a0abd19d2">findMin</a>(<span class="keywordtype">int</span> pathCost[], <span class="keywordtype">bool</span> isIncluded[]);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_prims_list.html#a189825e17ebfd8a148318bdc1583f18d">   29</a></span>&#160;    <a class="code" href="class_prims_list.html#a189825e17ebfd8a148318bdc1583f18d">PrimsList</a>(<span class="keywordtype">int</span> <a class="code" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a>, <span class="keywordtype">int</span> <a class="code" href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">edgeSize</a>) : <a class="code" href="class_list_representation.html">ListRepresentation</a>(<a class="code" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a>, <a class="code" href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">edgeSize</a>, 0, 0, false) {};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_prims_list.html#a7562cce680357b1fc034014206c86fbf">findMST</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_prims_list.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_prims_list.html">PrimsList</a>: <span class="keyword">public</span> <a class="code" href="class_list_representation.html">ListRepresentation</a>{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_prims_list.html#aa37762b1dad06f079d02451a0abd19d2">findMin</a>(<span class="keywordtype">int</span> pathCost[], <span class="keywordtype">bool</span> isIncluded[]);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_prims_list.html#a189825e17ebfd8a148318bdc1583f18d">   32</a></span>&#160;    <a class="code" href="class_prims_list.html#a189825e17ebfd8a148318bdc1583f18d">PrimsList</a>(<span class="keywordtype">int</span> <a class="code" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a>, <span class="keywordtype">int</span> <a class="code" href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">edgeSize</a>) : <a class="code" href="class_list_representation.html">ListRepresentation</a>(<a class="code" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a>, <a class="code" href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">edgeSize</a>, 0, 0, false) {};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_prims_list.html#a7562cce680357b1fc034014206c86fbf">findMST</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//SDIZO2_PRIMSLIST_H</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//SDIZO2_PRIMSLIST_H</span></div>
 <div class="ttc" id="aclass_list_representation_html"><div class="ttname"><a href="class_list_representation.html">ListRepresentation</a></div><div class="ttdef"><b>Definition:</b> ListRepresentation.h:11</div></div>
-<div class="ttc" id="aclass_list_representation_html_a0cb3aac0f28b12bdb20f9b48a4bf315e"><div class="ttname"><a href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">ListRepresentation::edgeSize</a></div><div class="ttdeci">int edgeSize</div><div class="ttdef"><b>Definition:</b> ListRepresentation.h:25</div></div>
-<div class="ttc" id="aclass_list_representation_html_a769e11fb6d8dc443a79cd75506bcb70d"><div class="ttname"><a href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">ListRepresentation::vertSize</a></div><div class="ttdeci">int vertSize</div><div class="ttdef"><b>Definition:</b> ListRepresentation.h:20</div></div>
-<div class="ttc" id="aclass_prims_list_html"><div class="ttname"><a href="class_prims_list.html">PrimsList</a></div><div class="ttdef"><b>Definition:</b> PrimsList.h:11</div></div>
-<div class="ttc" id="aclass_prims_list_html_a189825e17ebfd8a148318bdc1583f18d"><div class="ttname"><a href="class_prims_list.html#a189825e17ebfd8a148318bdc1583f18d">PrimsList::PrimsList</a></div><div class="ttdeci">PrimsList(int vertSize, int edgeSize)</div><div class="ttdef"><b>Definition:</b> PrimsList.h:29</div></div>
+<div class="ttc" id="aclass_list_representation_html_a0cb3aac0f28b12bdb20f9b48a4bf315e"><div class="ttname"><a href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">ListRepresentation::edgeSize</a></div><div class="ttdeci">int edgeSize</div><div class="ttdef"><b>Definition:</b> ListRepresentation.h:28</div></div>
+<div class="ttc" id="aclass_list_representation_html_a769e11fb6d8dc443a79cd75506bcb70d"><div class="ttname"><a href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">ListRepresentation::vertSize</a></div><div class="ttdeci">int vertSize</div><div class="ttdef"><b>Definition:</b> ListRepresentation.h:23</div></div>
+<div class="ttc" id="aclass_prims_list_html"><div class="ttname"><a href="class_prims_list.html">PrimsList</a></div><div class="ttdef"><b>Definition:</b> PrimsList.h:14</div></div>
+<div class="ttc" id="aclass_prims_list_html_a189825e17ebfd8a148318bdc1583f18d"><div class="ttname"><a href="class_prims_list.html#a189825e17ebfd8a148318bdc1583f18d">PrimsList::PrimsList</a></div><div class="ttdeci">PrimsList(int vertSize, int edgeSize)</div><div class="ttdef"><b>Definition:</b> PrimsList.h:32</div></div>
 <div class="ttc" id="aclass_prims_list_html_a7562cce680357b1fc034014206c86fbf"><div class="ttname"><a href="class_prims_list.html#a7562cce680357b1fc034014206c86fbf">PrimsList::findMST</a></div><div class="ttdeci">void findMST()</div><div class="ttdef"><b>Definition:</b> PrimsList.cpp:9</div></div>
 <div class="ttc" id="aclass_prims_list_html_aa37762b1dad06f079d02451a0abd19d2"><div class="ttname"><a href="class_prims_list.html#aa37762b1dad06f079d02451a0abd19d2">PrimsList::findMin</a></div><div class="ttdeci">int findMin(int pathCost[], bool isIncluded[])</div><div class="ttdef"><b>Definition:</b> PrimsList.cpp:40</div></div>
 </div><!-- fragment --></div><!-- contents -->

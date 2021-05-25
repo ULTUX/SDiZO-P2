@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parent_110',['parent',['../class_kruskal_matrix.html#af3de3ac8b39aa30097ae88152a797b85',1,'KruskalMatrix']]]
+  ['head_119',['head',['../class_adj_list.html#a3981a17a4160208049910ccf4c715e1c',1,'AdjList']]]
 ];

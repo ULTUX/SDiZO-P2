@@ -92,6 +92,8 @@ $(document).ready(function(){initNavTree('class_ford_fulkerson_list.html',''); i
 <div class="title">Dokumentacja klasy FordFulkersonList</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_ford_fulkerson_list_8h_source.html">FordFulkersonList.h</a>&gt;</code></p>
 <div class="dynheader">
 Diagram dziedziczenia dla FordFulkersonList</div>
 <div class="dyncontent">
@@ -106,9 +108,8 @@ Diagram dziedziczenia dla FordFulkersonList</div>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:aa383208fcd02f6cf4d48fbc2600f52f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ford_fulkerson_list.html#aa383208fcd02f6cf4d48fbc2600f52f3">FordFulkersonList</a> (int <a class="el" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a>, int <a class="el" href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">edgeSize</a>, int <a class="el" href="class_list_representation.html#a7c0c2f6421c9ed443d5de64776afad38">startVert</a>, int <a class="el" href="class_list_representation.html#a3ed170b5fbbeb9cc9c7a82679014eb35">endVert</a>)</td></tr>
 <tr class="separator:aa383208fcd02f6cf4d48fbc2600f52f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20138a499c5da847c0046a2cb7e05fa9"><td class="memItemLeft" align="right" valign="top"><a id="a20138a499c5da847c0046a2cb7e05fa9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
-<tr class="separator:a20138a499c5da847c0046a2cb7e05fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccb42ea0e98c25d726736efa2ba44b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ford_fulkerson_list.html#a9ccb42ea0e98c25d726736efa2ba44b3">start</a> () override</td></tr>
+<tr class="separator:a9ccb42ea0e98c25d726736efa2ba44b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_list_representation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_list_representation')"><img src="closed.png" alt="-"/>&#160;Metody publiczne dziedziczone z <a class="el" href="class_list_representation.html">ListRepresentation</a></td></tr>
 <tr class="memitem:a5dd6591ecf620095c1bc22789cb90472 inherit pub_methods_class_list_representation"><td class="memItemLeft" align="right" valign="top"><a id="a5dd6591ecf620095c1bc22789cb90472"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ListRepresentation</b> (int <a class="el" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a>, int <a class="el" href="class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e">edgeSize</a>, int <a class="el" href="class_list_representation.html#a7c0c2f6421c9ed443d5de64776afad38">startVert</a>, int <a class="el" href="class_list_representation.html#a3ed170b5fbbeb9cc9c7a82679014eb35">endVert</a>, bool isDirected)</td></tr>
@@ -132,8 +133,7 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Dodatkowe Dziedziczone Składowe</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_list_representation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_list_representation')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="class_list_representation.html">ListRepresentation</a></td></tr>
-<tr class="memitem:a6cf80ef53c15d82145338602f80f0393 inherit pro_attribs_class_list_representation"><td class="memItemLeft" align="right" valign="top"><a id="a6cf80ef53c15d82145338602f80f0393"></a>
-<a class="el" href="class_adj_list.html">AdjList</a> **&#160;</td><td class="memItemRight" valign="bottom"><b>adjLists</b></td></tr>
+<tr class="memitem:a6cf80ef53c15d82145338602f80f0393 inherit pro_attribs_class_list_representation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adj_list.html">AdjList</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a6cf80ef53c15d82145338602f80f0393">adjLists</a></td></tr>
 <tr class="separator:a6cf80ef53c15d82145338602f80f0393 inherit pro_attribs_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a769e11fb6d8dc443a79cd75506bcb70d inherit pro_attribs_class_list_representation"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a769e11fb6d8dc443a79cd75506bcb70d">vertSize</a></td></tr>
 <tr class="separator:a769e11fb6d8dc443a79cd75506bcb70d inherit pro_attribs_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +149,10 @@ Dodatkowe Dziedziczone Składowe</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></tr>
 <tr class="separator:aa069cb1b27930be93a5b83749a1428e9 inherit pro_attribs_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Ford-Fulkerson list implementation. <br  />
+ Based on: <a href="https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/">https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/</a>. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="aa383208fcd02f6cf4d48fbc2600f52f3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa383208fcd02f6cf4d48fbc2600f52f3">&#9670;&nbsp;</a></span>FordFulkersonList()</h2>
 
@@ -237,6 +240,34 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
   </dd>
 </dl>
 <dl class="section return"><dt>Zwraca</dt><dd>True if there is path from start to end vertices. </dd></dl>
+
+</div>
+</div>
+<a id="a9ccb42ea0e98c25d726736efa2ba44b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ccb42ea0e98c25d726736efa2ba44b3">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FordFulkersonList::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start the algorithm. </p>
+
+<p>Reimplementowana z <a class="el" href="class_list_representation.html#a01dc63128fabff266334f56dbaa30bcd">ListRepresentation</a>.</p>
 
 </div>
 </div>

@@ -3,6 +3,7 @@ var class_list_representation =
     [ "ListRepresentation", "class_list_representation.html#a5dd6591ecf620095c1bc22789cb90472", null ],
     [ "addConnection", "class_list_representation.html#a6b913555ee93b55b7c02df0c60551d9d", null ],
     [ "getAdjLists", "class_list_representation.html#a1021de7cfb40351e725c388751c9e00d", null ],
+    [ "start", "class_list_representation.html#a01dc63128fabff266334f56dbaa30bcd", null ],
     [ "adjLists", "class_list_representation.html#a6cf80ef53c15d82145338602f80f0393", null ],
     [ "currEdgeSize", "class_list_representation.html#ae04c828132a76ec58e8fb4dd68329b1e", null ],
     [ "edgeSize", "class_list_representation.html#a0cb3aac0f28b12bdb20f9b48a4bf315e", null ],

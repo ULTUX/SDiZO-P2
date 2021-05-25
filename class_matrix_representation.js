@@ -4,6 +4,7 @@ var class_matrix_representation =
     [ "addConnection", "class_matrix_representation.html#a8428eed429dadb1d004e9f5280a63f7b", null ],
     [ "getAdjMatrix", "class_matrix_representation.html#a0129733efd906e0b43d354bf05ce7930", null ],
     [ "print", "class_matrix_representation.html#a07783dfaa508ca1e53f658b46144cbca", null ],
+    [ "start", "class_matrix_representation.html#a15f7c50769966d2e7708c130457dfdba", null ],
     [ "adjMatrix", "class_matrix_representation.html#ae9b5ba36dde300cf7b32de18f2dcca71", null ],
     [ "currEdgeSize", "class_matrix_representation.html#aa375b368d7803f01b1f5968e0b1f0c13", null ],
     [ "edgeSize", "class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b", null ],
