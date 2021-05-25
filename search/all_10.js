@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['sdizo_2dp2_69',['SDiZO-P2',['../index.html',1,'']]],
+  ['sdizo_20zadanie_20projektowe_20nr_2e_202_69',['SDiZO Zadanie projektowe nr. 2',['../index.html',1,'']]],
   ['setedge_70',['setEdge',['../class_adj_list.html#ad50c7c4a0b93d879473827483ed2d439',1,'AdjList']]],
   ['setedgesize_71',['setEdgeSize',['../class_list_representation.html#a7e331b064cc5fd8e00cb89988e3bbc81',1,'ListRepresentation::setEdgeSize()'],['../class_matrix_representation.html#a9274e62c6cdeb6ed2958dc8aed314571',1,'MatrixRepresentation::setEdgeSize(int n)']]],
   ['setendingvertex_72',['setEndingVertex',['../class_matrix_representation.html#ab9ea981f516ce0922cdbf3495b747c9c',1,'MatrixRepresentation::setEndingVertex()'],['../class_list_representation.html#a5de057e350597d629ddbc8d17e01094c',1,'ListRepresentation::setEndingVertex()']]],
