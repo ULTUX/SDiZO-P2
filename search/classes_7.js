@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['matrixrepresentation_97',['MatrixRepresentation',['../class_matrix_representation.html',1,'']]],
-  ['menu_98',['Menu',['../class_menu.html',1,'']]]
+  ['matrixrepresentation_113',['MatrixRepresentation',['../class_matrix_representation.html',1,'']]],
+  ['menu_114',['Menu',['../class_menu.html',1,'']]]
 ];

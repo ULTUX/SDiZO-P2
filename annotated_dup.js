@@ -3,6 +3,7 @@ var annotated_dup =
     [ "AdjList", "class_adj_list.html", "class_adj_list" ],
     [ "BellmanFordList", "class_bellman_ford_list.html", "class_bellman_ford_list" ],
     [ "BellmanFordMatrix", "class_bellman_ford_matrix.html", "class_bellman_ford_matrix" ],
+    [ "Benchmark", "class_benchmark.html", "class_benchmark" ],
     [ "Connection", "class_connection.html", "class_connection" ],
     [ "CSVWriter", "class_c_s_v_writer.html", "class_c_s_v_writer" ],
     [ "DijsktraList", "class_dijsktra_list.html", "class_dijsktra_list" ],

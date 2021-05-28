@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SDiZO-P2: Dokumentacja klasy Benchmark</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SDiZO-P2
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Badanie efektywności algorytmów grafowych w zależności od rozmiaru instancji oraz sposobu reprezentacji grafu w pamięci komputera</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_benchmark.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_benchmark-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy Benchmark</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:af0106ef35b26d69c7f83af4174d09634"><td class="memItemLeft" align="right" valign="top"><a id="af0106ef35b26d69c7f83af4174d09634"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Benchmark</b> (AlgType type, bool <a class="el" href="class_benchmark.html#a5f15a97906bc1ea4afea4cdba4980521">writeToFile</a>, int <a class="el" href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">initialSize</a>, int <a class="el" href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">step</a>, float <a class="el" href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">multiplier</a>, int <a class="el" href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">testNumber</a>, int <a class="el" href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">maxSize</a>)</td></tr>
+<tr class="separator:af0106ef35b26d69c7f83af4174d09634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffdbcf9935a3731ec48cd758e6dde06"><td class="memItemLeft" align="right" valign="top"><a id="a5ffdbcf9935a3731ec48cd758e6dde06"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>startTest</b> ()</td></tr>
+<tr class="separator:a5ffdbcf9935a3731ec48cd758e6dde06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018582960e8d6c4d136bb59eb5ef6b6f"><td class="memItemLeft" align="right" valign="top"><a id="a018582960e8d6c4d136bb59eb5ef6b6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>generatePopulation</b> (double d, <a class="el" href="class_matrix_representation.html">MatrixRepresentation</a> *mRepresentation, <a class="el" href="class_list_representation.html">ListRepresentation</a> *lRepresentation1, bool directed, int vertSize)</td></tr>
+<tr class="separator:a018582960e8d6c4d136bb59eb5ef6b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:ab9a32d3349d09768889db0894f010975"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#ab9a32d3349d09768889db0894f010975">startTimer</a> ()</td></tr>
+<tr class="separator:ab9a32d3349d09768889db0894f010975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73195db4b0ed25cfa218d2a225fbf00"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#aa73195db4b0ed25cfa218d2a225fbf00">stopTimer</a> ()</td></tr>
+<tr class="separator:aa73195db4b0ed25cfa218d2a225fbf00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b8e490388f8f7576efd654a4f09ac5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a45b8e490388f8f7576efd654a4f09ac5">calcIterationNumber</a> ()</td></tr>
+<tr class="separator:a45b8e490388f8f7576efd654a4f09ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071cd8da5930c68c9ff5a3261769d2bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a071cd8da5930c68c9ff5a3261769d2bc">getNextRandom</a> (uniform_int_distribution&lt; int &gt; &amp;dist)</td></tr>
+<tr class="separator:a071cd8da5930c68c9ff5a3261769d2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cec8e273a69a70d01813421abd51d70"><td class="memItemLeft" align="right" valign="top"><a id="a1cec8e273a69a70d01813421abd51d70"></a>
+uniform_int_distribution&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getRandomInRange</b> (int a, int b)</td></tr>
+<tr class="separator:a1cec8e273a69a70d01813421abd51d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f15a97906bc1ea4afea4cdba4980521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a5f15a97906bc1ea4afea4cdba4980521">writeToFile</a> (string testName, double *resultArrayMatrix25, double *resultArrayList25, double *resultArrayMatrix50, double *resultArrayList50, double *resultArrayMatrix75, double *resultArrayList75, double *resultArrayMatrix99, double *resultArrayList99, int *size)</td></tr>
+<tr class="separator:a5f15a97906bc1ea4afea4cdba4980521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:ab27e5599c0c65ba8d9c2f01a2725881f"><td class="memItemLeft" align="right" valign="top">LARGE_INTEGER *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#ab27e5599c0c65ba8d9c2f01a2725881f">performanceCounter</a></td></tr>
+<tr class="separator:ab27e5599c0c65ba8d9c2f01a2725881f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5079fbe7893cf9f34fd3c478be6a68a0"><td class="memItemLeft" align="right" valign="top"><a id="a5079fbe7893cf9f34fd3c478be6a68a0"></a>
+mt19937&#160;</td><td class="memItemRight" valign="bottom"><b>randNumGen</b></td></tr>
+<tr class="separator:a5079fbe7893cf9f34fd3c478be6a68a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83dfa570b19da2925a8d3f304d0343b7"><td class="memItemLeft" align="right" valign="top"><a id="a83dfa570b19da2925a8d3f304d0343b7"></a>
+uniform_int_distribution&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>numberDistribution</b></td></tr>
+<tr class="separator:a83dfa570b19da2925a8d3f304d0343b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a384eb3ac7527c75b4e600525ff809676"><td class="memItemLeft" align="right" valign="top"><a id="a384eb3ac7527c75b4e600525ff809676"></a>
+AlgType&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="separator:a384eb3ac7527c75b4e600525ff809676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbcc4811ac2981be2032cb3da7aa132"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">testNumber</a></td></tr>
+<tr class="separator:acdbcc4811ac2981be2032cb3da7aa132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb670128b3e2842409d3c352160b2d53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">initialSize</a></td></tr>
+<tr class="separator:afb670128b3e2842409d3c352160b2d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2263963b831d6c515ea5d24477f37e1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">step</a></td></tr>
+<tr class="separator:a2263963b831d6c515ea5d24477f37e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fc159d2fd4ad41629207fd64b7e61d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">multiplier</a></td></tr>
+<tr class="separator:a92fc159d2fd4ad41629207fd64b7e61d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01244b7e475d396823e0a370d15cc08f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">maxSize</a></td></tr>
+<tr class="separator:a01244b7e475d396823e0a370d15cc08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc4c450b5df91e2729d9e39b38fa303"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#a4fc4c450b5df91e2729d9e39b38fa303">iterationNumber</a> {}</td></tr>
+<tr class="separator:a4fc4c450b5df91e2729d9e39b38fa303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af811297cfc087ea806e73fbebd975139"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_benchmark.html#af811297cfc087ea806e73fbebd975139">isWriteToFile</a></td></tr>
+<tr class="separator:af811297cfc087ea806e73fbebd975139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a45b8e490388f8f7576efd654a4f09ac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b8e490388f8f7576efd654a4f09ac5">&#9670;&nbsp;</a></span>calcIterationNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::calcIterationNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calculate amount of required iterations to meet input requirements. This function initializes iterationNumber. </p>
+
+</div>
+</div>
+<a id="a071cd8da5930c68c9ff5a3261769d2bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071cd8da5930c68c9ff5a3261769d2bc">&#9670;&nbsp;</a></span>getNextRandom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Benchmark::getNextRandom </td>
+          <td>(</td>
+          <td class="paramtype">uniform_int_distribution&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get next random int number generated by given distribution. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dist</td><td>Distribution to be used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Random value. </dd></dl>
+
+</div>
+</div>
+<a id="ab9a32d3349d09768889db0894f010975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9a32d3349d09768889db0894f010975">&#9670;&nbsp;</a></span>startTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::startTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Start counting time. </p>
+
+</div>
+</div>
+<a id="aa73195db4b0ed25cfa218d2a225fbf00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73195db4b0ed25cfa218d2a225fbf00">&#9670;&nbsp;</a></span>stopTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Benchmark::stopTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stop counting time and return it in us (micro-seconds). </p><dl class="section return"><dt>Zwraca</dt><dd>Time passed since last startTimer call. </dd></dl>
+
+</div>
+</div>
+<a id="a5f15a97906bc1ea4afea4cdba4980521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f15a97906bc1ea4afea4cdba4980521">&#9670;&nbsp;</a></span>writeToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Benchmark::writeToFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>testName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultArrayMatrix25</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultArrayList25</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultArrayMatrix50</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultArrayList50</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultArrayMatrix75</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultArrayList75</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultArrayMatrix99</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>resultArrayList99</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Function that prepares data and sends it to <a class="el" href="class_c_s_v_writer.html">CSVWriter</a>. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">testName</td><td>This is name of file to be generated (suffix .csv will be appended). </td></tr>
+    <tr><td class="paramname">data</td><td>Array containing time results to be written. </td></tr>
+    <tr><td class="paramname">size</td><td>Array containing corresponding sizes of data structures. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="afb670128b3e2842409d3c352160b2d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb670128b3e2842409d3c352160b2d53">&#9670;&nbsp;</a></span>initialSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Benchmark::initialSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initial size to start tests from. </p>
+
+</div>
+</div>
+<a id="af811297cfc087ea806e73fbebd975139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af811297cfc087ea806e73fbebd975139">&#9670;&nbsp;</a></span>isWriteToFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Benchmark::isWriteToFile</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Should produce output to csv file. </p>
+
+</div>
+</div>
+<a id="a4fc4c450b5df91e2729d9e39b38fa303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc4c450b5df91e2729d9e39b38fa303">&#9670;&nbsp;</a></span>iterationNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Benchmark::iterationNumber {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Expected iteration number. </p>
+
+</div>
+</div>
+<a id="a01244b7e475d396823e0a370d15cc08f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01244b7e475d396823e0a370d15cc08f">&#9670;&nbsp;</a></span>maxSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Benchmark::maxSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Max size to be reached. </p>
+
+</div>
+</div>
+<a id="a92fc159d2fd4ad41629207fd64b7e61d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92fc159d2fd4ad41629207fd64b7e61d">&#9670;&nbsp;</a></span>multiplier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Benchmark::multiplier</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Multiplier to multiply size by every iteration. </p>
+
+</div>
+</div>
+<a id="ab27e5599c0c65ba8d9c2f01a2725881f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27e5599c0c65ba8d9c2f01a2725881f">&#9670;&nbsp;</a></span>performanceCounter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">LARGE_INTEGER* Benchmark::performanceCounter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Class-specific performance counter. </p>
+
+</div>
+</div>
+<a id="a2263963b831d6c515ea5d24477f37e1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2263963b831d6c515ea5d24477f37e1e">&#9670;&nbsp;</a></span>step</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Benchmark::step</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Step to increment size by every iteration. </p>
+
+</div>
+</div>
+<a id="acdbcc4811ac2981be2032cb3da7aa132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdbcc4811ac2981be2032cb3da7aa132">&#9670;&nbsp;</a></span>testNumber</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Benchmark::testNumber</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Amount of times the tests should be run - then the values are averaged. </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li>src/<a class="el" href="_benchmark_8h_source.html">Benchmark.h</a></li>
+<li>src/Benchmark.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_benchmark.html">Benchmark</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

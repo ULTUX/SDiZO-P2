@@ -120,6 +120,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>calcIterationNumber()
+: <a class="el" href="class_benchmark.html#a45b8e490388f8f7576efd654a4f09ac5">Benchmark</a>
+</li>
 <li>clone()
 : <a class="el" href="class_list_representation.html#a548f8b839a5fa86a387c134cacc04071">ListRepresentation</a>
 , <a class="el" href="class_matrix_representation.html#a4b6617317dc60d1602e57ff62e3da2c9">MatrixRepresentation</a>
@@ -189,9 +192,6 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_prims_list.html#aa37762b1dad06f079d02451a0abd19d2">PrimsList</a>
 , <a class="el" href="class_prims_matrix.html#ac71a857d7110a54bc88f0000c90eb4dd">PrimsMatrix</a>
 </li>
-<li>findMST()
-: <a class="el" href="class_prims_list.html#a7562cce680357b1fc034014206c86fbf">PrimsList</a>
-</li>
 <li>findNode()
 : <a class="el" href="class_adj_list.html#a75fbf6c3da23cf71241edb0c391b4770">AdjList</a>
 </li>
@@ -229,6 +229,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>getLastElement()
 : <a class="el" href="class_adj_list.html#a2c7ef78937f55bdc4320aaf971ad2e27">AdjList</a>
 </li>
+<li>getNextRandom()
+: <a class="el" href="class_benchmark.html#a071cd8da5930c68c9ff5a3261769d2bc">Benchmark</a>
+</li>
 <li>getSize()
 : <a class="el" href="class_adj_list.html#a438146b413c281d321a09e5c3f8c3314">AdjList</a>
 </li>
@@ -256,11 +259,24 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="class_kruskal_list.html#a94ea699796bd4b557c37d471ec499349">KruskalList</a>
 , <a class="el" href="class_kruskal_matrix.html#a4bf36ff3c0264d3c8ebfe40480edc42e">KruskalMatrix</a>
 </li>
+<li>initialSize
+: <a class="el" href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">Benchmark</a>
+</li>
 <li>input
 : <a class="el" href="class_file_reader.html#a12478caa0a3edb31d4b365313fb63acd">FileReader</a>
 </li>
 <li>isEmpty()
 : <a class="el" href="class_queue.html#a65d9b23c23c917faa44981539bc34be7">Queue</a>
+</li>
+<li>isPrintOut
+: <a class="el" href="class_list_representation.html#adf0616fd9e9e43b72a608dcc001ac44a">ListRepresentation</a>
+, <a class="el" href="class_matrix_representation.html#a7916799b28e29222cf62b0c7e3ac3075">MatrixRepresentation</a>
+</li>
+<li>isWriteToFile
+: <a class="el" href="class_benchmark.html#af811297cfc087ea806e73fbebd975139">Benchmark</a>
+</li>
+<li>iterationNumber
+: <a class="el" href="class_benchmark.html#a4fc4c450b5df91e2729d9e39b38fa303">Benchmark</a>
 </li>
 </ul>
 
@@ -286,9 +302,15 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>MatrixRepresentation()
 : <a class="el" href="class_matrix_representation.html#a3f3b825488c458215cd6a74c4d857a24">MatrixRepresentation</a>
 </li>
+<li>maxSize
+: <a class="el" href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">Benchmark</a>
+</li>
 <li>minCost
 : <a class="el" href="class_kruskal_list.html#a32c464ed5a56f6ba7bc226e5945e17da">KruskalList</a>
 , <a class="el" href="class_kruskal_matrix.html#aa79522475cb9812429212b66c82d0123">KruskalMatrix</a>
+</li>
+<li>multiplier
+: <a class="el" href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">Benchmark</a>
 </li>
 </ul>
 
@@ -304,6 +326,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <li>parent
 : <a class="el" href="class_kruskal_list.html#a09f5589a81edb5edec347a3221a669c8">KruskalList</a>
 , <a class="el" href="class_kruskal_matrix.html#af3de3ac8b39aa30097ae88152a797b85">KruskalMatrix</a>
+</li>
+<li>performanceCounter
+: <a class="el" href="class_benchmark.html#ab27e5599c0c65ba8d9c2f01a2725881f">Benchmark</a>
 </li>
 <li>pop()
 : <a class="el" href="class_adj_list.html#a57fb1780a52ef0293b2952963a1a49c4">AdjList</a>
@@ -325,6 +350,12 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>printMainMenu()
 : <a class="el" href="class_menu.html#a331049e32d0e7b5ba154d050205643ca">Menu</a>
+</li>
+<li>printPath()
+: <a class="el" href="class_bellman_ford_list.html#a0a41f382668af52887a8fe210a22f076">BellmanFordList</a>
+, <a class="el" href="class_bellman_ford_matrix.html#a240e99543f187caccaa9c9312214e326">BellmanFordMatrix</a>
+, <a class="el" href="class_dijsktra_list.html#acbb2af1070e79ce827a888488c21745a">DijsktraList</a>
+, <a class="el" href="class_dijsktra_matrix.html#ae5088be6735ca552a954fc735d386ca9">DijsktraMatrix</a>
 </li>
 <li>push()
 : <a class="el" href="class_queue.html#accffb0de1d49b0d670f4bfeea1e2f550">Queue</a>
@@ -393,15 +424,32 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 , <a class="el" href="class_kruskal_matrix.html#a29cfb476912aafd16b14ffa597b48d57">KruskalMatrix</a>
 , <a class="el" href="class_list_representation.html#a01dc63128fabff266334f56dbaa30bcd">ListRepresentation</a>
 , <a class="el" href="class_matrix_representation.html#a15f7c50769966d2e7708c130457dfdba">MatrixRepresentation</a>
-, <a class="el" href="class_prims_matrix.html#a935510f92f0b7f699df9896eca00f588">PrimsMatrix</a>
+, <a class="el" href="class_prims_list.html#a0800be0b787a7172bf4923da52507a10">PrimsList</a>
+, <a class="el" href="class_prims_matrix.html#a11f4b66def3df1f948b88737fe3874c2">PrimsMatrix</a>
+</li>
+<li>startTimer()
+: <a class="el" href="class_benchmark.html#ab9a32d3349d09768889db0894f010975">Benchmark</a>
 </li>
 <li>startVert
 : <a class="el" href="class_file_reader.html#aea7536bec63769885e6ae910534bdd11">FileReader</a>
 , <a class="el" href="class_list_representation.html#a7c0c2f6421c9ed443d5de64776afad38">ListRepresentation</a>
 , <a class="el" href="class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945">MatrixRepresentation</a>
 </li>
+<li>step
+: <a class="el" href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">Benchmark</a>
+</li>
+<li>stopTimer()
+: <a class="el" href="class_benchmark.html#aa73195db4b0ed25cfa218d2a225fbf00">Benchmark</a>
+</li>
 <li>stream
 : <a class="el" href="class_c_s_v_writer.html#a593a6d124def9185aadba5ba2a43e9e4">CSVWriter</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>testNumber
+: <a class="el" href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">Benchmark</a>
 </li>
 </ul>
 
@@ -426,6 +474,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_w"></a>- w -</h3><ul>
 <li>writeData()
 : <a class="el" href="class_c_s_v_writer.html#a773f71db6811b160a0b77899856e7957">CSVWriter</a>
+</li>
+<li>writeToFile()
+: <a class="el" href="class_benchmark.html#a5f15a97906bc1ea4afea4cdba4980521">Benchmark</a>
 </li>
 </ul>
 </div><!-- contents -->

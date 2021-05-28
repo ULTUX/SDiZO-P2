@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('class_bellman_ford_list.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
 <a href="class_bellman_ford_list-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy BellmanFordList</div>  </div>
@@ -129,9 +130,20 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:af2f16f84abacd759706a24bdab682f2e inherit pub_methods_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548f8b839a5fa86a387c134cacc04071 inherit pub_methods_class_list_representation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a548f8b839a5fa86a387c134cacc04071">clone</a> (<a class="el" href="class_list_representation.html">ListRepresentation</a> *representation)</td></tr>
 <tr class="separator:a548f8b839a5fa86a387c134cacc04071 inherit pub_methods_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6702ba02807a26d72cd5be9af5c2c17a inherit pub_methods_class_list_representation"><td class="memItemLeft" align="right" valign="top"><a id="a6702ba02807a26d72cd5be9af5c2c17a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getisDirected</b> ()</td></tr>
+<tr class="separator:a6702ba02807a26d72cd5be9af5c2c17a inherit pub_methods_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:a0a41f382668af52887a8fe210a22f076"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bellman_ford_list.html#a0a41f382668af52887a8fe210a22f076">printPath</a> (int *parent, int vert)</td></tr>
+<tr class="separator:a0a41f382668af52887a8fe210a22f076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_list_representation"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_list_representation')"><img src="closed.png" alt="-"/>&#160;Atrybuty publiczne dziedziczone z <a class="el" href="class_list_representation.html">ListRepresentation</a></td></tr>
+<tr class="memitem:adf0616fd9e9e43b72a608dcc001ac44a inherit pub_attribs_class_list_representation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#adf0616fd9e9e43b72a608dcc001ac44a">isPrintOut</a> = true</td></tr>
+<tr class="separator:adf0616fd9e9e43b72a608dcc001ac44a inherit pub_attribs_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_list_representation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_list_representation')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="class_list_representation.html">ListRepresentation</a></td></tr>
 <tr class="memitem:a6cf80ef53c15d82145338602f80f0393 inherit pro_attribs_class_list_representation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adj_list.html">AdjList</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a6cf80ef53c15d82145338602f80f0393">adjLists</a></td></tr>
 <tr class="separator:a6cf80ef53c15d82145338602f80f0393 inherit pro_attribs_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +165,49 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 <div class="textblock"><p>Bellman-Ford algorithm adjacency list implementation. <br  />
  Based on: <a href="https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm#Algorithm">https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm#Algorithm</a>. </p>
 </div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a0a41f382668af52887a8fe210a22f076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a41f382668af52887a8fe210a22f076">&#9670;&nbsp;</a></span>printPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BellmanFordList::printPath </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vert</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Traverse and print path. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent to traverse. </td></tr>
+    <tr><td class="paramname">starting</td><td>vertex. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5821d76ed053fe3501f3c4314d5e1e1e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5821d76ed053fe3501f3c4314d5e1e1e">&#9670;&nbsp;</a></span>start()</h2>
 

@@ -4,6 +4,7 @@ var class_matrix_representation =
     [ "addConnection", "class_matrix_representation.html#a8428eed429dadb1d004e9f5280a63f7b", null ],
     [ "clone", "class_matrix_representation.html#a4b6617317dc60d1602e57ff62e3da2c9", null ],
     [ "getAdjMatrix", "class_matrix_representation.html#a0129733efd906e0b43d354bf05ce7930", null ],
+    [ "getisDirected", "class_matrix_representation.html#a384b45235a1463cd960eb06565d4f699", null ],
     [ "print", "class_matrix_representation.html#a07783dfaa508ca1e53f658b46144cbca", null ],
     [ "setEdgeSize", "class_matrix_representation.html#a9274e62c6cdeb6ed2958dc8aed314571", null ],
     [ "setEndingVertex", "class_matrix_representation.html#ab9ea981f516ce0922cdbf3495b747c9c", null ],
@@ -15,6 +16,7 @@ var class_matrix_representation =
     [ "edgeSize", "class_matrix_representation.html#a5504d769f330aa0de626994e933fba7b", null ],
     [ "endVert", "class_matrix_representation.html#a2f3deeccafb365154a5b2b678d245590", null ],
     [ "isDirected", "class_matrix_representation.html#aac80fa6f503b4088d4c64f3d49d55783", null ],
+    [ "isPrintOut", "class_matrix_representation.html#a7916799b28e29222cf62b0c7e3ac3075", null ],
     [ "startVert", "class_matrix_representation.html#a27b9e0a0a799e5369ef9ace3a7a26945", null ],
     [ "vertSize", "class_matrix_representation.html#a5ba78387f7467b89df95c69ca40aee5c", null ]
 ];

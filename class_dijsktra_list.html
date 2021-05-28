@@ -129,14 +129,22 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:af2f16f84abacd759706a24bdab682f2e inherit pub_methods_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a548f8b839a5fa86a387c134cacc04071 inherit pub_methods_class_list_representation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a548f8b839a5fa86a387c134cacc04071">clone</a> (<a class="el" href="class_list_representation.html">ListRepresentation</a> *representation)</td></tr>
 <tr class="separator:a548f8b839a5fa86a387c134cacc04071 inherit pub_methods_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6702ba02807a26d72cd5be9af5c2c17a inherit pub_methods_class_list_representation"><td class="memItemLeft" align="right" valign="top"><a id="a6702ba02807a26d72cd5be9af5c2c17a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getisDirected</b> ()</td></tr>
+<tr class="separator:a6702ba02807a26d72cd5be9af5c2c17a inherit pub_methods_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Metody prywatne</h2></td></tr>
 <tr class="memitem:aa7e7485bca76458cac448b2d9925f4a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dijsktra_list.html#aa7e7485bca76458cac448b2d9925f4a8">findMin</a> (int *shortestPath, bool *isIncluded)</td></tr>
 <tr class="separator:aa7e7485bca76458cac448b2d9925f4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb2af1070e79ce827a888488c21745a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dijsktra_list.html#acbb2af1070e79ce827a888488c21745a">printPath</a> (int *parent, int vert)</td></tr>
+<tr class="separator:acbb2af1070e79ce827a888488c21745a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Dodatkowe Dziedziczone Składowe</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_list_representation"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_list_representation')"><img src="closed.png" alt="-"/>&#160;Atrybuty publiczne dziedziczone z <a class="el" href="class_list_representation.html">ListRepresentation</a></td></tr>
+<tr class="memitem:adf0616fd9e9e43b72a608dcc001ac44a inherit pub_attribs_class_list_representation"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#adf0616fd9e9e43b72a608dcc001ac44a">isPrintOut</a> = true</td></tr>
+<tr class="separator:adf0616fd9e9e43b72a608dcc001ac44a inherit pub_attribs_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_list_representation"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_list_representation')"><img src="closed.png" alt="-"/>&#160;Atrybuty chronione dziedziczone z <a class="el" href="class_list_representation.html">ListRepresentation</a></td></tr>
 <tr class="memitem:a6cf80ef53c15d82145338602f80f0393 inherit pro_attribs_class_list_representation"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_adj_list.html">AdjList</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_list_representation.html#a6cf80ef53c15d82145338602f80f0393">adjLists</a></td></tr>
 <tr class="separator:a6cf80ef53c15d82145338602f80f0393 inherit pro_attribs_class_list_representation"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,6 +251,49 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 </table>
 </div><div class="memdoc">
 <p>Find next min vertex from not yet processed nodes. </p><dl class="section return"><dt>Zwraca</dt><dd>Vertex number. </dd></dl>
+
+</div>
+</div>
+<a id="acbb2af1070e79ce827a888488c21745a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb2af1070e79ce827a888488c21745a">&#9670;&nbsp;</a></span>printPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DijsktraList::printPath </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>vert</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Traverse and print path. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Parent to traverse. </td></tr>
+    <tr><td class="paramname">starting</td><td>vertex. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
