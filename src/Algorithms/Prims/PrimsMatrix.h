@@ -35,7 +35,7 @@ public:
     /**
      * Start Kruskal algorithm.
      */
-    void start();
+    void start() override;
 };
 
 

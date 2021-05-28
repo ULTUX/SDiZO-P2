@@ -23,10 +23,13 @@ int DijsktraList::findMin(int *shortestPath, bool *isIncluded) {
 void DijsktraList::start() {
     int shortestPath[vertSize];
     bool isIncluded[vertSize];
+    int parent[vertSize];
     for (int i = 0; i < vertSize; i++) {
         shortestPath[i] = INT_MAX;
         isIncluded[i] = false;
+        parent[i] = INT_MAX;
     }
+    parent[startVert]=-1;
     shortestPath[startVert] = 0;
     for (int i = 0; i < vertSize - 1; i++) {
         int minVert = findMin(shortestPath, isIncluded);
@@ -36,10 +39,27 @@ void DijsktraList::start() {
             if (!isIncluded[adj] && shortestPath[minVert] != INT_MAX &&
                 shortestPath[minVert] + adjLists[minVert]->get(j).edge < shortestPath[adj]) {
                 shortestPath[adj] = shortestPath[minVert] + adjLists[minVert]->get(j).edge;
+                parent[adj] = minVert;
             }
         }
     }
-    for (int i = 1; i < vertSize; i++) {
-        cout << startVert << " - " << i << " (" << shortestPath[i] << ")" << endl;
+    if (isPrintOut) {
+        cout << "Start = " << startVert << endl;
+        cout << "End Dist Path" << endl;
+        for (int i = 1; i < vertSize; i++) {
+            if (parent[i] != INT_MAX) {
+                cout << i << " | " << shortestPath[i] << " | ";
+                printPath(parent, i);
+            }
+        }
     }
+}
+
+void DijsktraList::printPath(int *parent, int vert) {
+    int curr = vert;
+    while (curr != -1){
+        cout<<curr<<" ";
+        curr = parent[curr];
+    }
+    cout<<endl;
 }

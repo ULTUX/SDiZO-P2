@@ -62,13 +62,16 @@ void FordFulkersonMatrix::start() {
             residualGraph[i][from] += minFlow;
         }
     }
-    for (int i = 0; i < vertSize; i++){
-        for (int j = 0; j < vertSize; j++){
-            if (adjMatrix[i][j] != 0){
-                cout<<"("<<i<<", "<<j<<")  "<<adjMatrix[i][j]<<" / "<<residualGraph[j][i]<<endl;
+    if (isPrintOut) {
+        cout << "Edge Flow (max/used)" << endl;
+        for (int i = 0; i < vertSize; i++) {
+            for (int j = 0; j < vertSize; j++) {
+                if (adjMatrix[i][j] != 0) {
+                    cout << "(" << i << ", " << j << ")  " << adjMatrix[i][j] << " / " << residualGraph[j][i] << endl;
+                }
             }
         }
+        cout << "MAX_FLOW = " << flow << endl;
     }
-    cout<<flow<<endl;
 
 }

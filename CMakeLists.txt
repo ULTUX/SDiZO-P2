@@ -35,4 +35,4 @@ add_executable(SDiZO2 main.cpp
         src/IO/CSVWriter.cpp
         src/IO/FileReader.h
         src/IO/FileReader.cpp
-        src/Menu.cpp src/Menu.h)
+        src/Menu.cpp src/Menu.h src/Benchmark.cpp src/Benchmark.h src/AlgType.h)

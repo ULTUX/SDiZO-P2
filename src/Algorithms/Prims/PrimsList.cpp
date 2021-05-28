@@ -6,7 +6,7 @@
 #include <iostream>
 #include "PrimsList.h"
 using namespace std;
-void PrimsList::findMST() {
+void PrimsList::start() {
     int parent[vertSize];
 
     bool isIncluded[vertSize];
@@ -16,12 +16,13 @@ void PrimsList::findMST() {
     for (int i = 0; i < vertSize; i++){
         pathCost[i] = INT_MAX;
         isIncluded[i] = false;
+        parent[i] = INT_MAX;
     }
     pathCost[0] = 0;
     parent[0] = -1;
-
-    for (int i = 0; i < vertSize-1; i++){
-        int currVert = findMin(pathCost, isIncluded);
+    int minCost = 0;
+        for (int i = 0; i < vertSize-1; i++){
+            int currVert = findMin(pathCost, isIncluded);
         isIncluded[currVert] = true;
         for (int j = 0; j < adjLists[currVert]->getSize(); j++){
 
@@ -30,11 +31,17 @@ void PrimsList::findMST() {
                pathCost[adjLists[currVert]->get(j).vertex] = adjLists[currVert]->get(j).edge;
            }
         }
-
     }
-    for (int i = 1; i < vertSize; i++){
-        cout<<parent[i]<<" - "<<i<<" ("<<adjLists[i]->getByVert(parent[i]).edge<<")"<<endl;
-    }
+        if (isPrintOut) {
+            cout << "Edge  Weight" << endl;
+            for (int i = 1; i < vertSize; i++) {
+                if (parent[i] != INT_MAX) {
+                    cout << "(" << parent[i] << ", " << i << ") " << adjLists[parent[i]]->getByVert(i).edge << endl;
+                    minCost += pathCost[i];
+                }
+            }
+            cout << "MST = " << minCost << endl;
+        }
 }
 
 int PrimsList::findMin(int *pathCost, bool *isIncluded) {

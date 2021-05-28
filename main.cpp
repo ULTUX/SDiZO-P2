@@ -3,16 +3,7 @@
 #include "src/util/AdjList.h"
 #include "src/Algorithms/Kruskal/KruskalMatrix.h"
 #include "src/Algorithms/Kruskal/KruskalList.h"
-#include "src/Algorithms/Prims/PrimsMatrix.h"
-#include "src/Algorithms/Prims/PrimsList.h"
-#include "src/Algorithms/Dijsktra/DijsktraMatrix.h"
-#include "src/Algorithms/Dijsktra/DijsktraList.h"
-#include "src/Algorithms/BellmanFord/BellmanFordList.h"
-#include "src/Algorithms/BellmanFord/BellmanFordMatrix.h"
-#include "src/Algorithms/FordFulkerson/FordFulkersonMatrix.h"
-#include "src/Algorithms/FordFulkerson/FordFulkersonList.h"
-#include "src/IO/FileReader.h"
-#include "src/Menu.h"
+#include "src/Benchmark.h"
 
 using namespace std;
 int main() {
@@ -119,7 +110,7 @@ int main() {
 //    readerdd.readToAdjList(&list);
 //    list.print();
 //    list.start();
-    Menu menu;
-
+//    Menu menu;
+    Benchmark benchmark(BellmanFord, false, 1, 10, 1.0, 10, 100);
     return 0;
 }

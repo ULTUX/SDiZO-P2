@@ -16,10 +16,11 @@ void PrimsMatrix::start() {
     for (int i = 0; i < vertSize; i++){
         pathCost[i] = INT_MAX;
         isIncluded[i] = false;
+        parent[i] = INT_MAX;
     }
     pathCost[0] = 0;
     parent[0] = -1;
-
+    int minCost = 0;
     for (int i = 0; i < vertSize-1; i++){
         int currVert = findMin(pathCost, isIncluded);
         isIncluded[currVert] = true;
@@ -30,8 +31,15 @@ void PrimsMatrix::start() {
             }
         }
     }
-    for (int i = 1; i < vertSize; i++){
-        cout<<parent[i]<<" - "<<i<<" ("<<adjMatrix[i][parent[i]]<<endl;
+    if (isPrintOut) {
+        cout<<"Edge  Weight"<<endl;
+        for (int i = 1; i < vertSize; i++){
+            if (parent[i] != INT_MAX) {
+                cout << "(" << parent[i] << ", " << i << ") " << adjMatrix[parent[i]][i] << endl;
+                minCost += pathCost[i];
+            }
+        }
+        cout<<"MST = "<<minCost<<endl;
     }
 
 }

@@ -9,11 +9,18 @@
 #include "../../GraphRepresentations/MatrixRepresentation.h"
 class DijsktraMatrix: public MatrixRepresentation {
 private:
-/**
- * Find next min vertex from not yet processed nodes.
- * @return Vertex number.
- */
-int findMin(int* shortestPath, bool* isIncluded);
+    /**
+     * Find next min vertex from not yet processed nodes.
+     * @return Vertex number.
+     */
+    int findMin(int* shortestPath, bool* isIncluded);
+
+    /**
+     * Traverse and print path.
+     * @param parent Parent to traverse.
+     * @param starting vertex.
+     */
+    void printPath(int *parent, int vert);
 public:
     /**
      * Create new graph.
@@ -27,6 +34,7 @@ public:
      * Start Dijsktra's algorithm.
      */
     void start() override;
+
 };
 
 

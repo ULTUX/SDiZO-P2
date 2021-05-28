@@ -42,9 +42,15 @@ protected:
      */
     int currEdgeSize = 0;
 
+
     bool isDirected;
 public:
     ListRepresentation(int vertSize, int edgeSize, int startVert, int endVert, bool isDirected);
+
+    /**
+     * Should the results be printed on the screen.
+     */
+    bool isPrintOut = true;
 
     /**
      * Add new connection to this graph (new edge).
@@ -103,6 +109,8 @@ public:
      * @param representation Object to be cloned from.
      */
     void clone(ListRepresentation* representation);
+
+    bool getisDirected(){return isDirected;};
 };
 
 

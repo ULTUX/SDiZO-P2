@@ -43,6 +43,7 @@ void MatrixRepresentation::addConnection(int begin, int end, int weight) {
         }
         if (adjMatrix[begin][end] != 0 && weight == 0) currEdgeSize--;
         adjMatrix[begin][end] = weight;
+        adjMatrix[end][begin] = weight;
     }
 }
 
@@ -66,6 +67,7 @@ void MatrixRepresentation::print() {
 }
 
 void MatrixRepresentation::setEdgeSize(int n) {
+    this->currEdgeSize = 0;
     this->edgeSize = n;
 }
 
@@ -93,11 +95,20 @@ void MatrixRepresentation::setStartingVertex(int v) {
 }
 
 void MatrixRepresentation::clone(MatrixRepresentation* representation) {
-    this->setVertSize(representation->vertSize);
-    this->setEdgeSize(representation->edgeSize);
-    for (int i = 0; i < representation->vertSize; i++) {
-        for (int j = 0; j < representation->vertSize; j++){
-            this->addConnection(i, j, representation->adjMatrix[i][j]);
+    setVertSize(representation->vertSize);
+    setEdgeSize(representation->edgeSize);
+    startVert = representation->startVert;
+    endVert = representation->endVert;
+    if (isDirected)
+        for (int i = 0; i < representation->vertSize; i++) {
+            for (int j = 0; j < representation->vertSize; j++){
+                addConnection(i, j, representation->adjMatrix[i][j]);
+            }
         }
-    }
+    else
+        for (int i = 0; i < representation->vertSize; i++) {
+            for (int j = 0; j < i; j++){
+                addConnection(j,i, representation->adjMatrix[j][i]);
+            }
+        }
 }

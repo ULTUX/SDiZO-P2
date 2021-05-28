@@ -2,6 +2,7 @@
 // Created by Wladyslaw Nowak on 17.04.2021.
 //
 
+#include <synchapi.h>
 #include "./Menu.h"
 #include "IO/FileReader.h"
 
@@ -10,7 +11,9 @@ Menu::Menu() {
 }
 
 void Menu::printMainMenu() {
-
+    while (matrixRep == nullptr && listRep == nullptr) {
+        printReadFromFileMenu();
+    }
     while (true) {
         cout << "Wybierz polecenie: " << endl;
         cout << "\t1. Wczytaj graf z pliku" << endl;
@@ -131,7 +134,7 @@ void Menu::printReadFromFileMenu() {
     string fileName;
     cout<<"Prosze podac nazwe pliku: ";
     cin>>fileName;
-    cout<<"Wczytywanie danych z pliku...";
+    cout<<"Wczytywanie danych z pliku..."<<endl;
     try {
         FileReader reader(fileName);
         listRep = new ListRepresentation(0, 0, 0, 0, true);
@@ -142,6 +145,7 @@ void Menu::printReadFromFileMenu() {
         reader2.readToAdjMatrix(matrixRep);
     } catch (runtime_error& e){
         printException(e);
+        Sleep(200);
         return;
     }
 
@@ -157,52 +161,72 @@ void Menu::printGraph() {
 }
 
 void Menu::kruskal() {
+    cout<<endl<<endl;
+    cout<<"Reprezentacja listowa: "<<endl;
     KruskalList klist(0, 0);
     klist.clone(listRep);
     klist.start();
 
+    cout<<endl<<endl<<"Reprezentacja macierzowa: "<<endl;
     KruskalMatrix kmatrix(0, 0);
     kmatrix.clone(matrixRep);
     kmatrix.start();
+    cout<<endl<<endl;
 }
 
 void Menu::dijsktra() {
+    cout<<endl<<endl;
+    cout<<"Reprezentacja listowa: "<<endl;
     DijsktraList dlist(0,0, 0);
     dlist.clone(listRep);
     dlist.start();
 
+    cout<<endl<<endl<<"Reprezentacja macierzowa: "<<endl;
     DijsktraMatrix dmatrix(0, 0, 0);
     dmatrix.clone(matrixRep);
     dmatrix.start();
+    cout<<endl<<endl;
 
 }
 
 void Menu::bellmanFord() {
+    cout<<endl<<endl;
+    cout<<"Reprezentacja listowa: "<<endl;
     BellmanFordList bflist(0,0, 0);
     bflist.clone(listRep);
     bflist.start();
 
+    cout<<endl<<endl<<"Reprezentacja macierzowa: "<<endl;
     BellmanFordMatrix bfmatrix(0, 0, 0);
     bfmatrix.clone(matrixRep);
     bfmatrix.start();
+    cout<<endl<<endl;
 }
 
 void Menu::fordFulkderson() {
+    cout<<endl<<endl;
+    cout<<"Reprezentacja listowa: "<<endl;
     FordFulkersonList fflist(0, 0, 0, 0);
     fflist.clone(listRep);
     fflist.start();
 
+    cout<<endl<<endl<<"Reprezentacja macierzowa: "<<endl;
     FordFulkersonMatrix ffmatrix(0, 0, 0, 0);
     ffmatrix.clone(matrixRep);
     ffmatrix.start();
+    cout<<endl<<endl;
 }
 
 void Menu::prima() {
+    cout<<endl<<endl;
+    cout<<"Reprezentacja listowa: "<<endl;
     PrimsList plist(0, 0);
     plist.clone(listRep);
     plist.start();
 
+    cout<<endl<<endl<<"Reprezentacja macierzowa: "<<endl;
     PrimsMatrix pmatrix(0, 0);
     pmatrix.clone(matrixRep);
     pmatrix.start();
+    cout<<endl<<endl;
 }

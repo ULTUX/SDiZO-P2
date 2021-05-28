@@ -50,6 +50,11 @@ public:
      */
     MatrixRepresentation(int vertSize, int edgeSize, int startVert, int endVert, bool isDirected);
 
+    /**
+     * Should the results be printed on the screen.
+     */
+    bool isPrintOut = true;
+
     virtual /**
      * Add new connection to this graph (new edge).
      * @param begin Edges starting vertex.
@@ -107,6 +112,8 @@ public:
      * @param representation Object to be cloned from.
      */
     void clone(MatrixRepresentation* representation);
+
+    bool getisDirected(){return isDirected;};
 
 };
 

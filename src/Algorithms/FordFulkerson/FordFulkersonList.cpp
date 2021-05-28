@@ -20,7 +20,7 @@ bool FordFulkersonList::bfs(int parent[]) {
 
     while (!queue.isEmpty()) {
         int curr = queue.shift();
-        for (int i = 0; i < vertSize; i++){
+        for (int i = 0; i < vertSize ; i++){
             if (!visited[i] && residualGraph[curr]->containsVert(i)){
                 if (i == endVert) {
                     parent[i] = curr;
@@ -65,12 +65,17 @@ void FordFulkersonList::start() {
             else residualGraph[i]->setEdge(from, residualGraph[i]->getByVert(from).edge + minFlow);
         }
     }
-    for (int i = 0; i < vertSize; i++){
-        for (int j = 0; j < adjLists[i]->getSize(); j++){
-            int remaining = 0;
-            if (residualGraph[adjLists[i]->get(j).vertex]->containsVert(i)) remaining = residualGraph[adjLists[i]->get(j).vertex]->getByVert(i).edge;
-            cout<<"("<<i<<", "<<adjLists[i]->get(j).vertex<<")  "<<adjLists[i]->get(j).edge<<" / "<<remaining<<endl;
+    if (isPrintOut) {
+        cout << "Edge Flow (max/used)" << endl;
+        for (int i = 0; i < vertSize; i++) {
+            for (int j = 0; j < adjLists[i]->getSize(); j++) {
+                int remaining = 0;
+                if (residualGraph[adjLists[i]->get(j).vertex]->containsVert(i))
+                    remaining = residualGraph[adjLists[i]->get(j).vertex]->getByVert(i).edge;
+                cout << "(" << i << ", " << adjLists[i]->get(j).vertex << ")  " << adjLists[i]->get(j).edge << " / "
+                     << remaining << endl;
+            }
         }
+        cout << "MAX_FLOW = " << flow << endl;
     }
-    cout<<flow<<endl;
 }

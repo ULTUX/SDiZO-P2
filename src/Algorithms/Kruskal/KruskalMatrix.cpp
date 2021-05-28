@@ -9,6 +9,7 @@ using namespace std;
 void KruskalMatrix::start() {
     minCost = 0;
     init();
+    if (isPrintOut) cout<<"Edge  Weight"<<endl;
     for (int i = 0; i < vertSize-1; i++) {
         int minV1, minV2, min = INT_MAX;
         for (int x = 0; x < vertSize; x++){
@@ -20,13 +21,12 @@ void KruskalMatrix::start() {
                 }
             }
         }
-        cout<<"FOUND MIN: "<<min<<endl;
-        cout<<minV1<<"---"<<minV2<<endl;
         unionVert(minV1, minV2);
-        cout<<"Adding edge: "<<minV1 <<"--("<<min<<")---"<<minV2<<endl;
+        if (isPrintOut) cout<<"("<<minV1<<", "<<minV2<<") "<<min<<endl;
         minCost += min;
     }
-    cout<<"Min cost: "<<minCost<<endl<<endl;
+    if (isPrintOut) cout<<"MST = "<<minCost<<endl<<endl;
+    delete[] parent;
 }
 
 

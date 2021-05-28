@@ -64,6 +64,7 @@ AdjList **ListRepresentation::getAdjLists() {
 }
 
 void ListRepresentation::setEdgeSize(int n) {
+    this->currEdgeSize = 0;
     this->edgeSize = n;
 }
 
@@ -100,11 +101,25 @@ void ListRepresentation::print() {
 }
 
 void ListRepresentation::clone(ListRepresentation* representation) {
+    this->startVert = representation->startVert;
+    this->endVert = representation->endVert;
     this->setVertSize(representation->vertSize);
     this->setEdgeSize(representation->edgeSize);
-    for (int i = 0; i < representation->vertSize; i++) {
-        for (int j = 0; j < representation->adjLists[i]->getSize(); j++){
-            this->adjLists[i]->add(representation->adjLists[i]->get(j));
+    if (isDirected)
+        for (int i = 0; i < representation->vertSize; i++) {
+            for (int j = 0; j < representation->adjLists[i]->getSize(); j++){
+                addConnection(i, representation->adjLists[i]->get(j).vertex, representation->adjLists[i]->get(j).edge);
+            }
+        }
+    else {
+        bool isIncluded[vertSize];
+        for (int i = 0; i < representation->vertSize; i++) {
+            for (int j = 0; j < representation->adjLists[i]->getSize(); j++) {
+                if (!isIncluded[representation->adjLists[i]->get(j).vertex]) {
+                    addConnection(i, representation->adjLists[i]->get(j).vertex, representation->adjLists[i]->get(j).edge);
+                    isIncluded[i] = true;
+                }
+            }
         }
     }
 }

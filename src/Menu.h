@@ -16,12 +16,12 @@ private:
     /**
      * Graph list representation read from file.
      */
-    ListRepresentation* listRep;
+    ListRepresentation* listRep = nullptr;
 
     /**
      * Graph matrix representation read from file.
      */
-    MatrixRepresentation* matrixRep;
+    MatrixRepresentation* matrixRep = nullptr;
 
     /**
      * Print main menu.

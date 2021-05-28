@@ -5,6 +5,7 @@
 #include <climits>
 #include <iostream>
 #include "KruskalList.h"
+
 using namespace std;
 int KruskalList::find(int i) {
     while (parent[i] != i)
@@ -17,6 +18,7 @@ void KruskalList::unionVert(int i, int j) {
 }
 
 void KruskalList::init() {
+    this->parent = new int[vertSize];
     for (int i = 0; i < vertSize; i++){
         parent[i] = i;
     }
@@ -24,9 +26,8 @@ void KruskalList::init() {
 
 void KruskalList::start() {
     init();
-
     minCost = 0;
-
+    if (isPrintOut) cout<<"Edge  Weight"<<endl;
     for (int i = 0; i < vertSize - 1; i++){
         int min = INT_MAX;
         int vert1, vert2;
@@ -42,19 +43,8 @@ void KruskalList::start() {
             }
         }
             unionVert(vert1, vert2);
-            cout<<"Adding edge: "<<vert1 <<"--("<<min<<")---"<<vert2<<endl;
+            if (isPrintOut) cout<<"("<<vert1 <<", "<<vert2<<") "<<min<<endl;
             minCost += min;
     }
-    cout<<"Min cost: "<<minCost<<endl<<endl;
-
-}
-
-void KruskalList::print() {
-    for (int i = 0; i < vertSize; i++){
-        cout<<i<<": ";
-        for (int j = 0; j < adjLists[i]->getSize(); j++){
-            cout<<"("<<adjLists[i]->get(j).vertex<<", "<<adjLists[i]->get(j).edge<<") ";
-        }
-        cout<<endl;
-    }
+    if (isPrintOut) cout<<"MST = "<<minCost<<endl<<endl;
 }

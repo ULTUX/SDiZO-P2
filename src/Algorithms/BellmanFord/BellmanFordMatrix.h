@@ -14,6 +14,12 @@
  */
 class BellmanFordMatrix: public MatrixRepresentation{
 private:
+    /**
+     * Traverse and print path.
+     * @param parent Parent to traverse.
+     * @param starting vertex.
+     */
+    void printPath(int *parent, int vert);
 public:
     /**
      * Create new graph.

@@ -35,7 +35,7 @@ public:
     /**
      * Start Kruskal algorithm.
      */
-    void findMST();
+    void start() override;
 
 };
 
