@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unionvert_94',['unionVert',['../class_kruskal_list.html#ad21e79ad4192e32748ab22f6489fd6a6',1,'KruskalList::unionVert()'],['../class_kruskal_matrix.html#ac67a4d63b3906ed89846dcd8199ff633',1,'KruskalMatrix::unionVert()']]]
+  ['unionvert_91',['unionVert',['../class_kruskal_list.html#a23a93eb3c283bc116b783d32369e8e12',1,'KruskalList::unionVert()'],['../class_kruskal_matrix.html#af3528153e667ae43a7a8f74688838126',1,'KruskalMatrix::unionVert()']]]
 ];

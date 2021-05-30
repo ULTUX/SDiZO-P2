@@ -1,10 +1,7 @@
 var class_kruskal_matrix =
 [
     [ "KruskalMatrix", "class_kruskal_matrix.html#a065d761b725591ba6d392a7e188b8f6a", null ],
-    [ "find", "class_kruskal_matrix.html#a04e23ca428ad3f20c23397e9a596cd1d", null ],
-    [ "init", "class_kruskal_matrix.html#a4bf36ff3c0264d3c8ebfe40480edc42e", null ],
+    [ "find", "class_kruskal_matrix.html#ac8093e10a267ecb215d003c12483d721", null ],
     [ "start", "class_kruskal_matrix.html#a29cfb476912aafd16b14ffa597b48d57", null ],
-    [ "unionVert", "class_kruskal_matrix.html#ac67a4d63b3906ed89846dcd8199ff633", null ],
-    [ "minCost", "class_kruskal_matrix.html#aa79522475cb9812429212b66c82d0123", null ],
-    [ "parent", "class_kruskal_matrix.html#af3de3ac8b39aa30097ae88152a797b85", null ]
+    [ "unionVert", "class_kruskal_matrix.html#af3528153e667ae43a7a8f74688838126", null ]
 ];

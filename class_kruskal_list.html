@@ -86,7 +86,6 @@ $(document).ready(function(){initNavTree('class_kruskal_list.html',''); initResi
   <div class="summary">
 <a href="#pub-methods">Metody publiczne</a> &#124;
 <a href="#pri-methods">Metody prywatne</a> &#124;
-<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
 <a href="class_kruskal_list-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
 <div class="title">Dokumentacja klasy KruskalList</div>  </div>
@@ -137,21 +136,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>getisDirected</b> ()<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Metody prywatne</h2></td></tr>
-<tr class="memitem:a886b9868f884ba975da286e9dad3b69e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_list.html#a886b9868f884ba975da286e9dad3b69e">find</a> (int i)</td></tr>
-<tr class="separator:a886b9868f884ba975da286e9dad3b69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad21e79ad4192e32748ab22f6489fd6a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_list.html#ad21e79ad4192e32748ab22f6489fd6a6">unionVert</a> (int i, int j)</td></tr>
-<tr class="separator:ad21e79ad4192e32748ab22f6489fd6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94ea699796bd4b557c37d471ec499349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_list.html#a94ea699796bd4b557c37d471ec499349">init</a> ()</td></tr>
-<tr class="separator:a94ea699796bd4b557c37d471ec499349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdef54a9790ee259f6ae2275187482ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_list.html#afdef54a9790ee259f6ae2275187482ae">print</a> ()</td></tr>
-<tr class="separator:afdef54a9790ee259f6ae2275187482ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Atrybuty prywatne</h2></td></tr>
-<tr class="memitem:a09f5589a81edb5edec347a3221a669c8"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_list.html#a09f5589a81edb5edec347a3221a669c8">parent</a></td></tr>
-<tr class="separator:a09f5589a81edb5edec347a3221a669c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c464ed5a56f6ba7bc226e5945e17da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_list.html#a32c464ed5a56f6ba7bc226e5945e17da">minCost</a> = -1</td></tr>
-<tr class="separator:a32c464ed5a56f6ba7bc226e5945e17da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba1b1f4a5c5abcdfc31e499a57e39bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_list.html#a3ba1b1f4a5c5abcdfc31e499a57e39bd">find</a> (int i, int *parent)</td></tr>
+<tr class="separator:a3ba1b1f4a5c5abcdfc31e499a57e39bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23a93eb3c283bc116b783d32369e8e12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_kruskal_list.html#a23a93eb3c283bc116b783d32369e8e12">unionVert</a> (int i, int j, int *parent)</td></tr>
+<tr class="separator:a23a93eb3c283bc116b783d32369e8e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Dodatkowe Dziedziczone Składowe</h2></td></tr>
@@ -178,8 +166,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Kruskal algorithm adjacency list implementation. </p>
 </div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
-<a id="a886b9868f884ba975da286e9dad3b69e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a886b9868f884ba975da286e9dad3b69e">&#9670;&nbsp;</a></span>find()</h2>
+<a id="a3ba1b1f4a5c5abcdfc31e499a57e39bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ba1b1f4a5c5abcdfc31e499a57e39bd">&#9670;&nbsp;</a></span>find()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,8 +179,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
           <td class="memname">int KruskalList::find </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -201,65 +199,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Find this vertex's node. </p><dl class="params"><dt>Parametry</dt><dd>
+<p>Find parent of input vertex. </p><dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">i</td><td>Input node. </td></tr>
+    <tr><td class="paramname">i</td><td>Input vertex. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Zwraca</dt><dd>Master parent node. </dd></dl>
-
-</div>
-</div>
-<a id="a94ea699796bd4b557c37d471ec499349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94ea699796bd4b557c37d471ec499349">&#9670;&nbsp;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void KruskalList::init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Init algorithm. </p>
-
-</div>
-</div>
-<a id="afdef54a9790ee259f6ae2275187482ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdef54a9790ee259f6ae2275187482ae">&#9670;&nbsp;</a></span>print()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void KruskalList::print </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Print Kruskal algorithm results. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Parent of this vertex. </dd></dl>
 
 </div>
 </div>
@@ -291,8 +237,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
 
 </div>
 </div>
-<a id="ad21e79ad4192e32748ab22f6489fd6a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad21e79ad4192e32748ab22f6489fd6a6">&#9670;&nbsp;</a></span>unionVert()</h2>
+<a id="a23a93eb3c283bc116b783d32369e8e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a93eb3c283bc116b783d32369e8e12">&#9670;&nbsp;</a></span>unionVert()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +256,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>j</em>&#160;</td>
+          <td class="paramname"><em>j</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -324,60 +276,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isDirected</b></td></
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Union two vertices groups into one. </p><dl class="params"><dt>Parametry</dt><dd>
+<p>Connect 2 groups into one. </p><dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>Vertex 1. </td></tr>
     <tr><td class="paramname">j</td><td>Vertex 2. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
-<a id="a32c464ed5a56f6ba7bc226e5945e17da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32c464ed5a56f6ba7bc226e5945e17da">&#9670;&nbsp;</a></span>minCost</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int KruskalList::minCost = -1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Minimum cost of this graph. </p>
-
-</div>
-</div>
-<a id="a09f5589a81edb5edec347a3221a669c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09f5589a81edb5edec347a3221a669c8">&#9670;&nbsp;</a></span>parent</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int* KruskalList::parent</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Array of parent structure. </p>
 
 </div>
 </div>
