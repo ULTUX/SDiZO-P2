@@ -112,13 +112,9 @@ void ListRepresentation::clone(ListRepresentation* representation) {
             }
         }
     else {
-        bool isIncluded[vertSize];
         for (int i = 0; i < representation->vertSize; i++) {
             for (int j = 0; j < representation->adjLists[i]->getSize(); j++) {
-                if (!isIncluded[representation->adjLists[i]->get(j).vertex]) {
                     addConnection(i, representation->adjLists[i]->get(j).vertex, representation->adjLists[i]->get(j).edge);
-                    isIncluded[i] = true;
-                }
             }
         }
     }

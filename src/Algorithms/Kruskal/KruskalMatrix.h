@@ -14,34 +14,21 @@
  */
 class KruskalMatrix: public MatrixRepresentation{
 private:
-    /**
-     * Minimal cost found by the algorithm.
-     */
-    int minCost;
-
-    /**
-     * Array that helps grouping vertices together.
-     */
-    int* parent;
 
     /**
      * Find parent of input vertex.
      * @param i Input vertex.
      * @return Parent of this vertex.
      */
-    int find(int i);
+    int find(int i, int* parent);
 
     /**
      * Connect 2 groups into one.
      * @param i Vertex 1.
      * @param j Vertex 2.
      */
-    void unionVert(int i, int j);
+    void unionVert(int i, int j, int* parent);
 
-    /**
-     * Init algorithm (fill parent array).
-     */
-    void init();
 
 public:
     /**

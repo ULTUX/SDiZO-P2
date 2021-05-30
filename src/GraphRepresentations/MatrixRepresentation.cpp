@@ -102,13 +102,17 @@ void MatrixRepresentation::clone(MatrixRepresentation* representation) {
     if (isDirected)
         for (int i = 0; i < representation->vertSize; i++) {
             for (int j = 0; j < representation->vertSize; j++){
-                addConnection(i, j, representation->adjMatrix[i][j]);
+                if (representation->adjMatrix[i][j] != 0){
+                    addConnection(i, j, representation->adjMatrix[i][j]);
+                }
             }
         }
     else
         for (int i = 0; i < representation->vertSize; i++) {
-            for (int j = 0; j < i; j++){
-                addConnection(j,i, representation->adjMatrix[j][i]);
+            for (int j = 0; j < representation->vertSize; j++){
+                if (representation->adjMatrix[j][i] != 0) {
+                    addConnection(j, i, representation->adjMatrix[j][i]);
+                }
             }
         }
 }

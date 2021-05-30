@@ -21,27 +21,27 @@ void PrimsList::start() {
     pathCost[0] = 0;
     parent[0] = -1;
     int minCost = 0;
-        for (int i = 0; i < vertSize-1; i++){
-            int currVert = findMin(pathCost, isIncluded);
+    for (int i = 0; i < vertSize-1; i++){
+        int currVert = findMin(pathCost, isIncluded);
         isIncluded[currVert] = true;
         for (int j = 0; j < adjLists[currVert]->getSize(); j++){
-
-           if (!isIncluded[adjLists[currVert]->get(j).vertex] && adjLists[currVert]->get(j).edge < pathCost[adjLists[currVert]->get(j).vertex]) {
-               parent[adjLists[currVert]->get(j).vertex] = currVert;
-               pathCost[adjLists[currVert]->get(j).vertex] = adjLists[currVert]->get(j).edge;
-           }
+            auto vert = adjLists[currVert]->get(j);
+            if (!isIncluded[vert.vertex] && vert.edge < pathCost[vert.vertex]) {
+               parent[vert.vertex] = currVert;
+               pathCost[vert.vertex] = vert.edge;
+            }
         }
     }
-        if (isPrintOut) {
-            cout << "Edge  Weight" << endl;
-            for (int i = 1; i < vertSize; i++) {
-                if (parent[i] != INT_MAX) {
-                    cout << "(" << parent[i] << ", " << i << ") " << adjLists[parent[i]]->getByVert(i).edge << endl;
-                    minCost += pathCost[i];
-                }
+    if (isPrintOut) {
+        cout << "Edge  Weight" << endl;
+        for (int i = 1; i < vertSize; i++) {
+            if (parent[i] != INT_MAX) {
+                cout << "(" << parent[i] << ", " << i << ") " << adjLists[parent[i]]->getByVert(i).edge << endl;
+                minCost += pathCost[i];
             }
-            cout << "MST = " << minCost << endl;
         }
+        cout << "MST = " << minCost << endl;
+    }
 }
 
 int PrimsList::findMin(int *pathCost, bool *isIncluded) {
