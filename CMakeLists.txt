@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.19)
 project(SDiZO2)
 
 set(CMAKE_CXX_STANDARD 14)
-#set(CMAKE_EXE_LINKER_FLAGS "-static")
+set(CMAKE_EXE_LINKER_FLAGS "-static")
 link_directories()
 add_executable(SDiZO2 main.cpp
         src/GraphRepresentations/MatrixRepresentation.cpp

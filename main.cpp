@@ -111,7 +111,7 @@ int main() {
 //    readerdd.readToAdjList(&list);
 //    list.print();
 //    list.start();
-//    Menu menu;
-    Benchmark benchmark(Kruskal, false, 0, 100, 1.0, 100, 1000);
+    Menu menu;
+//    Benchmark benchmark(Kruskal, false, 0, 100, 1.0, 100, 1000);
     return 0;
 }
