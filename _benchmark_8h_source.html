@@ -93,68 +93,82 @@ $(document).ready(function(){initNavTree('_benchmark_8h_source.html',''); initRe
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef SDIZO2_BENCHMARK_H</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define SDIZO2_BENCHMARK_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;AlgType.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;GraphRepresentations/MatrixRepresentation.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;GraphRepresentations/ListRepresentation.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_benchmark.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_benchmark.html">Benchmark</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_benchmark.html#ab27e5599c0c65ba8d9c2f01a2725881f">   19</a></span>&#160;    LARGE_INTEGER* <a class="code" href="class_benchmark.html#ab27e5599c0c65ba8d9c2f01a2725881f">performanceCounter</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    mt19937 randNumGen;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    uniform_int_distribution&lt;int&gt; numberDistribution;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    AlgType type;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">testNumber</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">initialSize</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">   38</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">step</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">   43</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">multiplier</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">   48</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">maxSize</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_benchmark.html#a4fc4c450b5df91e2729d9e39b38fa303">   53</a></span>&#160;    <span class="keywordtype">int</span> iterationNumber{};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_benchmark.html#af811297cfc087ea806e73fbebd975139">   58</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_benchmark.html#af811297cfc087ea806e73fbebd975139">isWriteToFile</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> startTimer();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">double</span> stopTimer();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> calcIterationNumber();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> getNextRandom(uniform_int_distribution&lt;int&gt;&amp; dist);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    uniform_int_distribution&lt;int&gt; getRandomInRange(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    writeToFile(<span class="keywordtype">string</span> testName, <span class="keywordtype">double</span>* resultArrayMatrix25, <span class="keywordtype">double</span>* resultArrayList25, <span class="keywordtype">double</span>* resultArrayMatrix50,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordtype">double</span>* resultArrayList50, <span class="keywordtype">double</span>* resultArrayMatrix75, <span class="keywordtype">double</span>* resultArrayList75,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordtype">double</span>* resultArrayMatrix99, <span class="keywordtype">double</span>* resultArrayList99, <span class="keywordtype">int</span>* size);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_benchmark.html">Benchmark</a>(AlgType type, <span class="keywordtype">bool</span> writeToFile, <span class="keywordtype">int</span> initialSize, <span class="keywordtype">int</span> step, <span class="keywordtype">float</span> multiplier, <span class="keywordtype">int</span> testNumber, <span class="keywordtype">int</span> maxSize);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> startTest();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> generatePopulation(<span class="keywordtype">double</span> d, <a class="code" href="class_matrix_representation.html">MatrixRepresentation</a> *mRepresentation, <a class="code" href="class_list_representation.html">ListRepresentation</a> *lRepresentation1,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                            <span class="keywordtype">bool</span> directed, <span class="keywordtype">int</span> vertSize);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//SDIZO2_BENCHMARK_H</span></div>
-<div class="ttc" id="aclass_benchmark_html"><div class="ttname"><a href="class_benchmark.html">Benchmark</a></div><div class="ttdef"><b>Definition:</b> Benchmark.h:14</div></div>
-<div class="ttc" id="aclass_benchmark_html_a01244b7e475d396823e0a370d15cc08f"><div class="ttname"><a href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">Benchmark::maxSize</a></div><div class="ttdeci">int maxSize</div><div class="ttdef"><b>Definition:</b> Benchmark.h:48</div></div>
-<div class="ttc" id="aclass_benchmark_html_a2263963b831d6c515ea5d24477f37e1e"><div class="ttname"><a href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">Benchmark::step</a></div><div class="ttdeci">int step</div><div class="ttdef"><b>Definition:</b> Benchmark.h:38</div></div>
-<div class="ttc" id="aclass_benchmark_html_a92fc159d2fd4ad41629207fd64b7e61d"><div class="ttname"><a href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">Benchmark::multiplier</a></div><div class="ttdeci">float multiplier</div><div class="ttdef"><b>Definition:</b> Benchmark.h:43</div></div>
-<div class="ttc" id="aclass_benchmark_html_ab27e5599c0c65ba8d9c2f01a2725881f"><div class="ttname"><a href="class_benchmark.html#ab27e5599c0c65ba8d9c2f01a2725881f">Benchmark::performanceCounter</a></div><div class="ttdeci">LARGE_INTEGER * performanceCounter</div><div class="ttdef"><b>Definition:</b> Benchmark.h:19</div></div>
-<div class="ttc" id="aclass_benchmark_html_acdbcc4811ac2981be2032cb3da7aa132"><div class="ttname"><a href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">Benchmark::testNumber</a></div><div class="ttdeci">int testNumber</div><div class="ttdef"><b>Definition:</b> Benchmark.h:28</div></div>
-<div class="ttc" id="aclass_benchmark_html_af811297cfc087ea806e73fbebd975139"><div class="ttname"><a href="class_benchmark.html#af811297cfc087ea806e73fbebd975139">Benchmark::isWriteToFile</a></div><div class="ttdeci">bool isWriteToFile</div><div class="ttdef"><b>Definition:</b> Benchmark.h:58</div></div>
-<div class="ttc" id="aclass_benchmark_html_afb670128b3e2842409d3c352160b2d53"><div class="ttname"><a href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">Benchmark::initialSize</a></div><div class="ttdeci">int initialSize</div><div class="ttdef"><b>Definition:</b> Benchmark.h:33</div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;AlgType.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;GraphRepresentations/MatrixRepresentation.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;GraphRepresentations/ListRepresentation.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;IO/CSVWriter.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;Algorithms/BellmanFord/BellmanFordMatrix.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;Algorithms/BellmanFord/BellmanFordList.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;Algorithms/Dijsktra/DijsktraMatrix.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;Algorithms/Dijsktra/DijsktraList.h&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;Algorithms/FordFulkerson/FordFulkersonMatrix.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;Algorithms/FordFulkerson/FordFulkersonList.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;Algorithms/Kruskal/KruskalMatrix.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;Algorithms/Kruskal/KruskalList.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;Algorithms/Prims/PrimsMatrix.h&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;Algorithms/Prims/PrimsList.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_benchmark.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_benchmark.html">Benchmark</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_benchmark.html#ab27e5599c0c65ba8d9c2f01a2725881f">   33</a></span>&#160;    LARGE_INTEGER* <a class="code" href="class_benchmark.html#ab27e5599c0c65ba8d9c2f01a2725881f">performanceCounter</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    mt19937 randNumGen;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    uniform_int_distribution&lt;int&gt; numberDistribution;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    AlgType type;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">   42</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">testNumber</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">   47</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">initialSize</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">   52</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">step</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">   57</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">multiplier</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">maxSize</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_benchmark.html#a4fc4c450b5df91e2729d9e39b38fa303">   67</a></span>&#160;    <span class="keywordtype">int</span> iterationNumber{};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_benchmark.html#af811297cfc087ea806e73fbebd975139">   72</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_benchmark.html#af811297cfc087ea806e73fbebd975139">isWriteToFile</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> startTimer();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">double</span> stopTimer();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> calcIterationNumber();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> getNextRandom(uniform_int_distribution&lt;int&gt;&amp; dist);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    uniform_int_distribution&lt;int&gt; getRandomInRange(<span class="keywordtype">int</span> a, <span class="keywordtype">int</span> b);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    writeToFile(<span class="keywordtype">string</span> testName, <span class="keywordtype">double</span>* resultArrayMatrix25, <span class="keywordtype">double</span>* resultArrayList25, <span class="keywordtype">double</span>* resultArrayMatrix50,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordtype">double</span>* resultArrayList50, <span class="keywordtype">double</span>* resultArrayMatrix75, <span class="keywordtype">double</span>* resultArrayList75,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordtype">double</span>* resultArrayMatrix99, <span class="keywordtype">double</span>* resultArrayList99, <span class="keywordtype">int</span>* size);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="class_benchmark.html">Benchmark</a>(AlgType type, <span class="keywordtype">bool</span> writeToFile, <span class="keywordtype">int</span> initialSize, <span class="keywordtype">int</span> step, <span class="keywordtype">float</span> multiplier, <span class="keywordtype">int</span> testNumber, <span class="keywordtype">int</span> maxSize);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> startTest();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> generatePopulation(<span class="keywordtype">double</span> d, <a class="code" href="class_matrix_representation.html">MatrixRepresentation</a> *mRepresentation, <a class="code" href="class_list_representation.html">ListRepresentation</a> *lRepresentation1,</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                            <span class="keywordtype">bool</span> directed, <span class="keywordtype">int</span> vertSize);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//SDIZO2_BENCHMARK_H</span></div>
+<div class="ttc" id="aclass_benchmark_html"><div class="ttname"><a href="class_benchmark.html">Benchmark</a></div><div class="ttdef"><b>Definition:</b> Benchmark.h:28</div></div>
+<div class="ttc" id="aclass_benchmark_html_a01244b7e475d396823e0a370d15cc08f"><div class="ttname"><a href="class_benchmark.html#a01244b7e475d396823e0a370d15cc08f">Benchmark::maxSize</a></div><div class="ttdeci">int maxSize</div><div class="ttdef"><b>Definition:</b> Benchmark.h:62</div></div>
+<div class="ttc" id="aclass_benchmark_html_a2263963b831d6c515ea5d24477f37e1e"><div class="ttname"><a href="class_benchmark.html#a2263963b831d6c515ea5d24477f37e1e">Benchmark::step</a></div><div class="ttdeci">int step</div><div class="ttdef"><b>Definition:</b> Benchmark.h:52</div></div>
+<div class="ttc" id="aclass_benchmark_html_a92fc159d2fd4ad41629207fd64b7e61d"><div class="ttname"><a href="class_benchmark.html#a92fc159d2fd4ad41629207fd64b7e61d">Benchmark::multiplier</a></div><div class="ttdeci">float multiplier</div><div class="ttdef"><b>Definition:</b> Benchmark.h:57</div></div>
+<div class="ttc" id="aclass_benchmark_html_ab27e5599c0c65ba8d9c2f01a2725881f"><div class="ttname"><a href="class_benchmark.html#ab27e5599c0c65ba8d9c2f01a2725881f">Benchmark::performanceCounter</a></div><div class="ttdeci">LARGE_INTEGER * performanceCounter</div><div class="ttdef"><b>Definition:</b> Benchmark.h:33</div></div>
+<div class="ttc" id="aclass_benchmark_html_acdbcc4811ac2981be2032cb3da7aa132"><div class="ttname"><a href="class_benchmark.html#acdbcc4811ac2981be2032cb3da7aa132">Benchmark::testNumber</a></div><div class="ttdeci">int testNumber</div><div class="ttdef"><b>Definition:</b> Benchmark.h:42</div></div>
+<div class="ttc" id="aclass_benchmark_html_af811297cfc087ea806e73fbebd975139"><div class="ttname"><a href="class_benchmark.html#af811297cfc087ea806e73fbebd975139">Benchmark::isWriteToFile</a></div><div class="ttdeci">bool isWriteToFile</div><div class="ttdef"><b>Definition:</b> Benchmark.h:72</div></div>
+<div class="ttc" id="aclass_benchmark_html_afb670128b3e2842409d3c352160b2d53"><div class="ttname"><a href="class_benchmark.html#afb670128b3e2842409d3c352160b2d53">Benchmark::initialSize</a></div><div class="ttdeci">int initialSize</div><div class="ttdef"><b>Definition:</b> Benchmark.h:47</div></div>
 <div class="ttc" id="aclass_list_representation_html"><div class="ttname"><a href="class_list_representation.html">ListRepresentation</a></div><div class="ttdef"><b>Definition:</b> ListRepresentation.h:11</div></div>
 <div class="ttc" id="aclass_matrix_representation_html"><div class="ttname"><a href="class_matrix_representation.html">MatrixRepresentation</a></div><div class="ttdef"><b>Definition:</b> MatrixRepresentation.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
