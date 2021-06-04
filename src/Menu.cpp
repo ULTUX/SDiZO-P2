@@ -2,10 +2,9 @@
 // Created by Wladyslaw Nowak on 17.04.2021.
 //
 
-#include <synchapi.h>
 #include "./Menu.h"
 #include "IO/FileReader.h"
-
+#include <windows.h>
 Menu::Menu() {
     printMainMenu();
 }

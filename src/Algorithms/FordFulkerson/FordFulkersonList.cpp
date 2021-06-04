@@ -9,7 +9,7 @@
 
 using namespace std;
 bool FordFulkersonList::bfs(int parent[]) {
-    bool visited[vertSize];
+    bool* visited = new bool[vertSize];
     for (int i = 0; i < vertSize; i++){
         visited[i] = false;
     }
@@ -24,6 +24,7 @@ bool FordFulkersonList::bfs(int parent[]) {
             if (!visited[i] && residualGraph[curr]->containsVert(i)){
                 if (i == endVert) {
                     parent[i] = curr;
+                    delete[] visited;
                     return true;
                 }
                 parent[i] = curr;
@@ -32,6 +33,7 @@ bool FordFulkersonList::bfs(int parent[]) {
             }
         }
     }
+    delete[] visited;
     return false;
 }
 
@@ -45,7 +47,7 @@ void FordFulkersonList::start() {
     }
     residualGraph = list->getAdjLists();
     int flow = 0;
-    int parent[vertSize];
+    int* parent = new int[vertSize];
     while (bfs(parent)) {
         //Find min path
         int minFlow = INT_MAX;
@@ -78,4 +80,5 @@ void FordFulkersonList::start() {
         }
         cout << "MAX_FLOW = " << flow << endl;
     }
+    delete[] parent;
 }

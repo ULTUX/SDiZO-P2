@@ -5,11 +5,12 @@
 #include <climits>
 #include <iostream>
 #include "KruskalMatrix.h"
+
 using namespace std;
 
 void KruskalMatrix::start() {
     int minCost = 0;
-    int parent[vertSize];
+    int* parent = new int[vertSize];
     for (int i = 0; i < vertSize; i++){
         parent[i] = i;
     }
@@ -30,6 +31,7 @@ void KruskalMatrix::start() {
         minCost += min;
     }
     if (isPrintOut) cout<<"MST = "<<minCost<<endl<<endl;
+    delete[] parent;
 }
 
 

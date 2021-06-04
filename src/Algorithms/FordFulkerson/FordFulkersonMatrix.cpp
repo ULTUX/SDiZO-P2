@@ -8,7 +8,7 @@
 #include "../../util/Queue.h"
 using namespace std;
 bool FordFulkersonMatrix::bfs(int parent[]) {
-    bool visited[vertSize];
+    bool* visited = new bool[vertSize];
     for (int i = 0; i < vertSize; i++){
         visited[i] = false;
     }
@@ -23,6 +23,7 @@ bool FordFulkersonMatrix::bfs(int parent[]) {
             if (residualGraph[curr][i] != 0 && !visited[i]){
                 if (i == endVert) {
                     parent[i] = curr;
+                    delete[] visited;
                     return true;
                 }
                 parent[i] = curr;
@@ -31,6 +32,7 @@ bool FordFulkersonMatrix::bfs(int parent[]) {
             }
         }
     }
+    delete[] visited;
     return false;
 
 }
@@ -45,7 +47,7 @@ void FordFulkersonMatrix::start() {
         }
     }
     int flow = 0;
-    int parent[vertSize];
+    int* parent = new int[vertSize];
     while (bfs(parent)) {
         //Find min path
         int minFlow = INT_MAX;
@@ -73,5 +75,6 @@ void FordFulkersonMatrix::start() {
         }
         cout << "MAX_FLOW = " << flow << endl;
     }
+    delete[] parent;
 
 }

@@ -7,11 +7,11 @@
 #include "PrimsList.h"
 using namespace std;
 void PrimsList::start() {
-    int parent[vertSize];
+    int* parent = new int[vertSize];
 
-    bool isIncluded[vertSize];
+    bool* isIncluded = new bool[vertSize];
 
-    int pathCost[vertSize];
+    int* pathCost = new int[vertSize];
 
     for (int i = 0; i < vertSize; i++){
         pathCost[i] = INT_MAX;
@@ -42,6 +42,9 @@ void PrimsList::start() {
         }
         cout << "MST = " << minCost << endl;
     }
+    delete[] parent;
+    delete[] isIncluded;
+    delete[] pathCost;
 }
 
 int PrimsList::findMin(int *pathCost, bool *isIncluded) {

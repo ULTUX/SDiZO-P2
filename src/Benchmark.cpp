@@ -2,19 +2,8 @@
 // Created by Wladyslaw Nowak on 27.05.2021.
 //
 
-#include <iostream>
 #include "Benchmark.h"
-#include "IO/CSVWriter.h"
-#include "Algorithms/BellmanFord/BellmanFordMatrix.h"
-#include "Algorithms/BellmanFord/BellmanFordList.h"
-#include "Algorithms/Dijsktra/DijsktraMatrix.h"
-#include "Algorithms/Dijsktra/DijsktraList.h"
-#include "Algorithms/FordFulkerson/FordFulkersonMatrix.h"
-#include "Algorithms/FordFulkerson/FordFulkersonList.h"
-#include "Algorithms/Kruskal/KruskalMatrix.h"
-#include "Algorithms/Kruskal/KruskalList.h"
-#include "Algorithms/Prims/PrimsMatrix.h"
-#include "Algorithms/Prims/PrimsList.h"
+
 
 Benchmark::Benchmark(AlgType type, bool writeToFile, int initialSize, int step, float multiplier, int testNumber,
                      int maxSize) :

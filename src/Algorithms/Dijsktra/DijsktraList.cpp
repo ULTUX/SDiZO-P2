@@ -21,9 +21,10 @@ int DijsktraList::findMin(int *shortestPath, bool *isIncluded) {
 }
 
 void DijsktraList::start() {
-    int shortestPath[vertSize];
-    bool isIncluded[vertSize];
-    int parent[vertSize];
+    int* shortestPath = new int[vertSize];
+    bool* isIncluded = new bool[vertSize];
+    int* parent = new int[vertSize];
+
     for (int i = 0; i < vertSize; i++) {
         shortestPath[i] = INT_MAX;
         isIncluded[i] = false;
@@ -53,6 +54,9 @@ void DijsktraList::start() {
             }
         }
     }
+    delete[] shortestPath;
+    delete[] isIncluded;
+    delete[] parent;
 }
 
 void DijsktraList::printPath(int *parent, int vert) {

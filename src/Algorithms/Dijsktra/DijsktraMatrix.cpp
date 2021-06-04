@@ -8,12 +8,12 @@
 using namespace std;
 void DijsktraMatrix::start() {
     //Array storing bool values, true is vertex is included in spt.
-    bool isIncluded[vertSize];
+    bool* isIncluded = new bool[vertSize];
 
     //Stores shortest path from start to given node
-    int shortestPath[vertSize];
+    int* shortestPath = new int[vertSize];
 
-    int parent[vertSize];
+    int* parent = new int[vertSize];
 
     for (int i = 0; i < vertSize; i++) {
         isIncluded[i] = false;
@@ -43,6 +43,10 @@ void DijsktraMatrix::start() {
             }
         }
     }
+
+    delete[] isIncluded;
+    delete[] shortestPath;
+    delete[] parent;
 }
 
 int DijsktraMatrix::findMin(int *shortestPath, bool *isIncluded) {

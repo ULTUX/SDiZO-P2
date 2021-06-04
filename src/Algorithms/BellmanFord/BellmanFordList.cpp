@@ -8,8 +8,8 @@
 using namespace std;
 void BellmanFordList::start() {
 
-    int shortestPath[vertSize];
-    int parent[vertSize];
+    int* shortestPath = new int[vertSize];
+    int* parent = new int[vertSize];
 
     for (int i = 0; i < vertSize; i++){
         shortestPath[i] = INT_MAX;
@@ -53,6 +53,8 @@ void BellmanFordList::start() {
             }
         }
     }
+    delete[] shortestPath;
+    delete[] parent;
 }
 
 void BellmanFordList::printPath(int *parent, int vert) {

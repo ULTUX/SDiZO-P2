@@ -4,6 +4,7 @@
 
 #ifndef SDIZO2_ALGTYPE_H
 #define SDIZO2_ALGTYPE_H
+
 enum AlgType {
    BellmanFord,
    Dijsktra,
@@ -11,4 +12,5 @@ enum AlgType {
    Kruskal,
    Prims
 };
+
 #endif //SDIZO2_ALGTYPE_H

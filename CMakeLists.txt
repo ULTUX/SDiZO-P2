@@ -4,6 +4,7 @@ project(SDiZO2)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_EXE_LINKER_FLAGS "-static")
 link_directories()
+
 add_executable(SDiZO2 main.cpp
         src/GraphRepresentations/MatrixRepresentation.cpp
         src/GraphRepresentations/MatrixRepresentation.h
@@ -35,4 +36,9 @@ add_executable(SDiZO2 main.cpp
         src/IO/CSVWriter.cpp
         src/IO/FileReader.h
         src/IO/FileReader.cpp
-        src/Menu.cpp src/Menu.h src/Benchmark.cpp src/Benchmark.h src/AlgType.h)
+        src/Menu.cpp
+        src/Menu.h
+        src/AlgType.h
+        src/Benchmark.cpp
+        src/Benchmark.h
+        )

@@ -4,11 +4,25 @@
 
 #ifndef SDIZO2_BENCHMARK_H
 #define SDIZO2_BENCHMARK_H
+
 #include <windows.h>
+#include <iostream>
 #include <random>
 #include "AlgType.h"
 #include "GraphRepresentations/MatrixRepresentation.h"
 #include "GraphRepresentations/ListRepresentation.h"
+#include "IO/CSVWriter.h"
+#include "Algorithms/BellmanFord/BellmanFordMatrix.h"
+#include "Algorithms/BellmanFord/BellmanFordList.h"
+#include "Algorithms/Dijsktra/DijsktraMatrix.h"
+#include "Algorithms/Dijsktra/DijsktraList.h"
+#include "Algorithms/FordFulkerson/FordFulkersonMatrix.h"
+#include "Algorithms/FordFulkerson/FordFulkersonList.h"
+#include "Algorithms/Kruskal/KruskalMatrix.h"
+#include "Algorithms/Kruskal/KruskalList.h"
+#include "Algorithms/Prims/PrimsMatrix.h"
+#include "Algorithms/Prims/PrimsList.h"
+
 
 using namespace std;
 class Benchmark {

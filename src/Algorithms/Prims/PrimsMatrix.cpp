@@ -7,11 +7,11 @@
 #include "PrimsMatrix.h"
 using namespace std;
 void PrimsMatrix::start() {
-    int parent[vertSize];
+    int* parent = new int[vertSize];
 
-    bool isIncluded[vertSize];
+    bool* isIncluded = new bool[vertSize];
 
-    int pathCost[vertSize];
+    int* pathCost = new int[vertSize];
 
     for (int i = 0; i < vertSize; i++){
         pathCost[i] = INT_MAX;
@@ -41,6 +41,9 @@ void PrimsMatrix::start() {
         }
         cout<<"MST = "<<minCost<<endl;
     }
+    delete[] parent;
+    delete[] isIncluded;
+    delete[] pathCost;
 
 }
 

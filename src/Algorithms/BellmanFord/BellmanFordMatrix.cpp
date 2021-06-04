@@ -8,8 +8,8 @@
 using namespace std;
 void BellmanFordMatrix::start() {
 
-    int shortestPath[vertSize];
-    int parent[vertSize];
+    int* shortestPath = new int[vertSize];
+    int* parent = new int[vertSize];
 
     for (int i = 0; i < vertSize; i++){
         shortestPath[i] = INT_MAX;
@@ -51,6 +51,9 @@ void BellmanFordMatrix::start() {
             }
         }
     }
+
+    delete[] shortestPath;
+    delete[] parent;
 }
 void BellmanFordMatrix::printPath(int *parent, int vert) {
     int curr = vert;

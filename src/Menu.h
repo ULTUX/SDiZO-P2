@@ -5,9 +5,9 @@
 #ifndef SDIZO2_MENU_H
 #define SDIZO2_MENU_H
 
-#include <string>
 #include "GraphRepresentations/ListRepresentation.h"
 #include "GraphRepresentations/MatrixRepresentation.h"
+#include <string>
 
 using namespace std;
 

@@ -1,9 +1,5 @@
 
 #include <iostream>
-#include "src/util/AdjList.h"
-#include "src/Algorithms/Kruskal/KruskalMatrix.h"
-#include "src/Algorithms/Kruskal/KruskalList.h"
-#include "src/Benchmark.h"
 #include "src/Menu.h"
 
 using namespace std;
@@ -112,6 +108,6 @@ int main() {
 //    list.print();
 //    list.start();
     Menu menu;
-//    Benchmark benchmark(Kruskal, false, 0, 100, 1.0, 100, 1000);
+    //Benchmark benchmark(Kruskal, false, 0, 100, 1.0, 100, 1000);
     return 0;
 }

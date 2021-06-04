@@ -7,7 +7,6 @@
 
 #include <fstream>
 #include <iostream>
-#include <cstdlib>
 #include "../Algorithms/Prims/PrimsList.h"
 #include "../Algorithms/Prims/PrimsMatrix.h"
 #include "../Algorithms/Kruskal/KruskalList.h"
