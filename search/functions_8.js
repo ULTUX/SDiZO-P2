@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matrixrepresentation_146',['MatrixRepresentation',['../class_matrix_representation.html#a3f3b825488c458215cd6a74c4d857a24',1,'MatrixRepresentation']]]
+  ['kruskalmatrix_148',['KruskalMatrix',['../class_kruskal_matrix.html#a065d761b725591ba6d392a7e188b8f6a',1,'KruskalMatrix']]]
 ];

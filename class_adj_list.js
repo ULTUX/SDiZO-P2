@@ -9,7 +9,7 @@ var class_adj_list =
     [ "findNodeWithVert", "class_adj_list.html#a4fe76bd07f641daec0aedc16a8876103", null ],
     [ "get", "class_adj_list.html#a464141461a6adce64e3170156a0f4282", null ],
     [ "getAtIndex", "class_adj_list.html#a5546cd7e9019e2fd29b2121ac68c18dd", null ],
-    [ "getByVert", "class_adj_list.html#a5e17e04677b80d891a476564add42d88", null ],
+    [ "getByVert", "class_adj_list.html#ae53ef36d57afa809de4f91a90ddcee6e", null ],
     [ "getLastElement", "class_adj_list.html#a2c7ef78937f55bdc4320aaf971ad2e27", null ],
     [ "getSize", "class_adj_list.html#a438146b413c281d321a09e5c3f8c3314", null ],
     [ "indexOf", "class_adj_list.html#a4a4fa676e6eeff8a3e1e68cf5a92033f", null ],

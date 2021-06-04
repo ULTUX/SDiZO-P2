@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['writedata_170',['writeData',['../class_c_s_v_writer.html#a773f71db6811b160a0b77899856e7957',1,'CSVWriter']]],
-  ['writetofile_171',['writeToFile',['../class_benchmark.html#a5f15a97906bc1ea4afea4cdba4980521',1,'Benchmark']]]
+  ['unionvert_173',['unionVert',['../class_kruskal_list.html#a23a93eb3c283bc116b783d32369e8e12',1,'KruskalList::unionVert()'],['../class_kruskal_matrix.html#af3528153e667ae43a7a8f74688838126',1,'KruskalMatrix::unionVert()']]]
 ];
