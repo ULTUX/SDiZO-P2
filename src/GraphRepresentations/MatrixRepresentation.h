@@ -115,6 +115,12 @@ public:
 
     bool getisDirected(){return isDirected;};
 
+    /**
+     * Returns true if this graph has negative weights.
+     * @return True if this graph has negative edges.
+     */
+    bool hasNegativeWeights();
+
 };
 
 

@@ -20,6 +20,13 @@ private:
      * @param starting vertex.
      */
     void printPath(int *parent, int vert);
+
+    /**
+     * Print algorithm results.
+     * @param parent Parent array.
+     * @param shortestPath Array containing shortest paths.
+     */
+    void printResult(int* parent, int* shortestPath);
 public:
     BellmanFordList(int vertSize, int edgeSize, int startVert)
             : ListRepresentation(vertSize, edgeSize, startVert, 0, true) {};

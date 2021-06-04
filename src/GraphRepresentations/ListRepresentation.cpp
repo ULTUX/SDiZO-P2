@@ -119,3 +119,12 @@ void ListRepresentation::clone(ListRepresentation* representation) {
         }
     }
 }
+
+bool ListRepresentation::hasNegativeWeights() {
+    for (int i = 0; i < vertSize;i++){
+        for (int j = 0; j < adjLists[i]->getSize(); j++){
+            if (adjLists[i]->get(j).edge < 0) return true;
+        }
+    }
+    return false;
+}

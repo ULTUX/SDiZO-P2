@@ -7,7 +7,11 @@ public:
     Connection(){};
     int edge;
     int vertex;
-    void setEdge(int weight){this->edge = weight;};
-    void setVert(int vert){this->vertex = vert;};
+    void setEdge(int weight){
+        edge = weight;
+    };
+    void setVert(int vert){
+        vertex = vert;
+    };
 };
 #endif

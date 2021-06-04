@@ -154,7 +154,7 @@ bool AdjList::containsVert(int v) {
     return true;
 }
 
-Connection AdjList::getByVert(int v) {
+Connection& AdjList::getByVert(int v) {
     if (head == nullptr) throw std::logic_error("List is empty.");
     ListNode* curr = head;
     while (curr->next != nullptr && (curr->data.vertex != v)){
@@ -192,12 +192,11 @@ int AdjList::getSize() {
     return i+1;
 }
 void AdjList::setEdge(int vert, int weight) {
-    if (!this->containsVert(vert)) return;
-    if (weight == 0) {
-        deleteVert(vert);
-        return;
-    }
+    if (!containsVert(vert)) return;
     else {
-        this->getByVert(vert).setEdge(weight);
+        getByVert(vert).setEdge(weight);
+        if (weight == 0) {
+            deleteVert(vert);
+        }
     }
 }

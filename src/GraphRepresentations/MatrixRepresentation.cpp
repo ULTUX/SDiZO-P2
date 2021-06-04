@@ -116,3 +116,12 @@ void MatrixRepresentation::clone(MatrixRepresentation* representation) {
             }
         }
 }
+
+bool MatrixRepresentation::hasNegativeWeights() {
+    for (int i = 0; i < vertSize;i++){
+        for (int j = 0; j < vertSize; j++){
+            if (adjMatrix[i][j] < 0) return true;
+        }
+    }
+    return false;
+}

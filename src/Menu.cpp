@@ -178,11 +178,13 @@ void Menu::dijsktra() {
     cout<<"Reprezentacja listowa: "<<endl;
     DijsktraList dlist(0,0, 0);
     dlist.clone(listRep);
+    if (dlist.hasNegativeWeights()) cout<<"UWAGA: Ten graf posiada ujemne krawedzie, algorytm djikstry może nie dzialac poprawnie"<<endl;
     dlist.start();
 
     cout<<endl<<endl<<"Reprezentacja macierzowa: "<<endl;
     DijsktraMatrix dmatrix(0, 0, 0);
     dmatrix.clone(matrixRep);
+    if (dmatrix.hasNegativeWeights()) cout<<"UWAGA: Ten graf posiada ujemne krawedzie, algorytm djikstry może nie dzialac poprawnie"<<endl;
     dmatrix.start();
     cout<<endl<<endl;
 

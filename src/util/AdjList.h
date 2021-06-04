@@ -141,7 +141,7 @@ public:
      * @param v Vertex to look for.
      * @return
      */
-    Connection getByVert(int v);
+    Connection& getByVert(int v);
 
     /**
      * Set edge weight of given vertex's edge. If 0 is given the vertex will be deleted from list.

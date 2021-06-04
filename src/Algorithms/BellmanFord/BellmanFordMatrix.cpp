@@ -19,14 +19,20 @@ void BellmanFordMatrix::start() {
     parent[startVert] = -1;
     shortestPath[startVert] = 0;
 
-
+    bool wasRelaxation = false;
     for (int i = 0; i < vertSize-1; i++){
+        wasRelaxation = false;
         for (int j = 0; j < vertSize; j++){
             int edge = adjMatrix[i][j];
             if (edge != 0 && shortestPath[i] != INT_MAX && shortestPath[i] + edge < shortestPath[j]){
                 shortestPath[j] = shortestPath[i] + edge;
                 parent[j] = i;
+                wasRelaxation = true;
             }
+        }
+        if (!wasRelaxation) {
+            if (isPrintOut) printResult(parent, shortestPath);
+            return;
         }
     }
 
@@ -41,16 +47,7 @@ void BellmanFordMatrix::start() {
             }
         }
     }
-    if (isPrintOut) {
-        cout << "Start = " << startVert << endl;
-        cout << "End Dist Path" << endl;
-        for (int i = 1; i < vertSize; i++) {
-            if (parent[i] != INT_MAX) {
-                cout << i << " | " << shortestPath[i] << " | ";
-                printPath(parent, i);
-            }
-        }
-    }
+    if (isPrintOut) printResult(parent, shortestPath);
 
     delete[] shortestPath;
     delete[] parent;
@@ -62,4 +59,15 @@ void BellmanFordMatrix::printPath(int *parent, int vert) {
         curr = parent[curr];
     }
     cout<<endl;
+}
+
+void BellmanFordMatrix::printResult(int *parent, int *shortestPath) {
+    cout << "Start = " << startVert << endl;
+    cout << "End Dist Path" << endl;
+    for (int i = 1; i < vertSize; i++) {
+        if (parent[i] != INT_MAX) {
+            cout << i << " | " << shortestPath[i] << " | ";
+            printPath(parent, i);
+        }
+    }
 }

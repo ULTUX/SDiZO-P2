@@ -60,7 +60,7 @@ void FordFulkersonList::start() {
         flow += minFlow;
         for (int i = endVert; i != startVert; i = parent[i]){
             int from = parent[i];
-            residualGraph[from]->setEdge(i, residualGraph[from]->getByVert(i).edge - minFlow);
+            residualGraph[from]->setEdge(i, (residualGraph[from]->getByVert(i).edge - minFlow));
             if (!residualGraph[i]->containsVert(from)) {
                 residualGraph[i]->add(Connection(from, minFlow));
             }
