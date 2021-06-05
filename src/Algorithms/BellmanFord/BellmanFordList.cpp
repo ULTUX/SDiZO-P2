@@ -31,10 +31,11 @@ void BellmanFordList::start() {
                 wasRelaxation = true;
             }
         }
-        if (!wasRelaxation) {
-            if (isPrintOut) printResult(parent, shortestPath);
-            return;
-        }    }
+    }
+    if (!wasRelaxation) {
+        if (isPrintOut) printResult(parent, shortestPath);
+        return;
+    }
 
     //Fix negative weight cycles
     for (int i = 0; i < vertSize; i++){

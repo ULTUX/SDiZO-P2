@@ -30,10 +30,10 @@ void BellmanFordMatrix::start() {
                 wasRelaxation = true;
             }
         }
-        if (!wasRelaxation) {
-            if (isPrintOut) printResult(parent, shortestPath);
-            return;
-        }
+    }
+    if (!wasRelaxation) {
+        if (isPrintOut) printResult(parent, shortestPath);
+        return;
     }
 
     //Fix negative weight cycles
