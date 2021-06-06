@@ -6,6 +6,7 @@
 #define SDIZO2_BENCHMARK_H
 
 #include <windows.h>
+#include <string>
 #include <iostream>
 #include <random>
 #include "AlgType.h"
